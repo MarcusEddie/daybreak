@@ -20,12 +20,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"marcuseddie.github.io","root":"/daybreak/","images":"/daybreak/images","scheme":"Gemini","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"waline","storage":true,"lazyload":false,"nav":null,"activeClass":"waline"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/daybreak/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/daybreak/js/config.js"></script>
 
-    <meta name="description" content="&amp;emsp;&amp;emsp;笔记整理计划及主题安排">
+    <meta name="description" content="笔记整理计划及主题安排">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算图">
 <meta property="og:url" content="https://marcuseddie.github.io/daybreak/2018/6-Computation-graph/index.html">
 <meta property="og:site_name" content="Mr.Muzi">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;笔记整理计划及主题安排">
+<meta property="og:description" content="笔记整理计划及主题安排">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103222013.png">
 <meta property="og:image" content="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103240932.png">
@@ -162,7 +162,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Softmax-with-Loss%E5%B1%82%E7%9A%84%E8%AE%A1%E7%AE%97%E5%9B%BE"><span class="nav-number">1.</span> <span class="nav-text">Softmax-with-Loss层的计算图</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#softmax-with-loss%E5%B1%82%E7%9A%84%E8%AE%A1%E7%AE%97%E5%9B%BE"><span class="nav-number">1.</span> <span class="nav-text">Softmax-with-Loss层的计算图</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -298,24 +298,57 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>&emsp;&emsp;笔记整理计划及主题安排<br><span id="more"></span></p>
-<h1 id="Softmax-with-Loss层的计算图"><a href="#Softmax-with-Loss层的计算图" class="headerlink" title="Softmax-with-Loss层的计算图"></a>Softmax-with-Loss层的计算图</h1><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103222013.png" alt="image-20220604103222013"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103240932.png" alt="image-20220604103240932"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103305732.png" alt="image-20220604103305732"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103317190.png" alt="image-20220604103317190"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103327318.png" alt="image-20220604103327318"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103341196.png" alt="image-20220604103341196"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103354548.png" alt="image-20220604103354548"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103409641.png" alt="image-20220604103409641"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103421802.png" alt="image-20220604103421802"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103440707.png" alt="image-20220604103440707"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103517025.png" alt="image-20220604103517025"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103540044.png" alt="image-20220604103540044"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103555923.png" alt="image-20220604103555923"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103612191.png" alt="image-20220604103612191"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103633190.png" alt="image-20220604103633190"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103648949.png" alt="image-20220604103648949"></p>
-<p>&emsp;<br>&emsp;<br>&emsp;<br>&emsp;</p>
+        <p>  笔记整理计划及主题安排 <span id="more"></span></p>
+<h1 id="softmax-with-loss层的计算图">Softmax-with-Loss层的计算图</h1>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103222013.png" alt="image-20220604103222013" /><figcaption aria-hidden="true">image-20220604103222013</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103240932.png" alt="image-20220604103240932" /><figcaption aria-hidden="true">image-20220604103240932</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103305732.png" alt="image-20220604103305732" /><figcaption aria-hidden="true">image-20220604103305732</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103317190.png" alt="image-20220604103317190" /><figcaption aria-hidden="true">image-20220604103317190</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103327318.png" alt="image-20220604103327318" /><figcaption aria-hidden="true">image-20220604103327318</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103341196.png" alt="image-20220604103341196" /><figcaption aria-hidden="true">image-20220604103341196</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103354548.png" alt="image-20220604103354548" /><figcaption aria-hidden="true">image-20220604103354548</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103409641.png" alt="image-20220604103409641" /><figcaption aria-hidden="true">image-20220604103409641</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103421802.png" alt="image-20220604103421802" /><figcaption aria-hidden="true">image-20220604103421802</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103440707.png" alt="image-20220604103440707" /><figcaption aria-hidden="true">image-20220604103440707</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103517025.png" alt="image-20220604103517025" /><figcaption aria-hidden="true">image-20220604103517025</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103540044.png" alt="image-20220604103540044" /><figcaption aria-hidden="true">image-20220604103540044</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103555923.png" alt="image-20220604103555923" /><figcaption aria-hidden="true">image-20220604103555923</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103612191.png" alt="image-20220604103612191" /><figcaption aria-hidden="true">image-20220604103612191</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103633190.png" alt="image-20220604103633190" /><figcaption aria-hidden="true">image-20220604103633190</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103648949.png" alt="image-20220604103648949" /><figcaption aria-hidden="true">image-20220604103648949</figcaption>
+</figure>
+<p>       </p>
 
     </div>
 
@@ -333,13 +366,10 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/daybreak/2018/4-nn-learning-teeory/" rel="prev" title="学习技巧理论">
-                  <i class="fa fa-chevron-left"></i> 学习技巧理论
-                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/daybreak/2018/5-nn-cnn.basic/" rel="next" title="卷积网络">
-                  卷积网络 <i class="fa fa-chevron-right"></i>
+                <a href="/daybreak/2018/4-nn-learning-teeory/" rel="next" title="学习技巧理论">
+                  学习技巧理论 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>

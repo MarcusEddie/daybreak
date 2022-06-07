@@ -20,12 +20,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"marcuseddie.github.io","root":"/daybreak/","images":"/daybreak/images","scheme":"Gemini","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"waline","storage":true,"lazyload":false,"nav":null,"activeClass":"waline"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/daybreak/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/daybreak/js/config.js"></script>
 
-    <meta name="description" content="&amp;emsp;&amp;emsp;笔记整理计划及主题安排">
+    <meta name="description" content="笔记整理计划及主题安排">
 <meta property="og:type" content="article">
 <meta property="og:title" content="神经网络学习">
 <meta property="og:url" content="https://marcuseddie.github.io/daybreak/2018/2-nn-train/index.html">
 <meta property="og:site_name" content="Mr.Muzi">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;笔记整理计划及主题安排">
+<meta property="og:description" content="笔记整理计划及主题安排">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530082928091.png">
 <meta property="og:image" content="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083314169.png">
@@ -181,7 +181,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%AD%A6%E4%B9%A0"><span class="nav-number">1.</span> <span class="nav-text">第四章 神经网络的学习</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0"><span class="nav-number">1.1.</span> <span class="nav-text">一、损失函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E4%BA%A4%E5%8F%89%E7%86%B5"><span class="nav-number">1.1.1.</span> <span class="nav-text">1. 交叉熵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-mini-batch"><span class="nav-number">1.1.2.</span> <span class="nav-text">2. mini-batch</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%AE%BE%E5%AE%9A%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0"><span class="nav-number">1.2.</span> <span class="nav-text">二、为什么要设定损失函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E6%95%B0%E5%80%BC%E5%BE%AE%E5%88%86"><span class="nav-number">1.3.</span> <span class="nav-text">三、数值微分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%AF%BC%E6%95%B0"><span class="nav-number">1.3.1.</span> <span class="nav-text">1. 导数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%81%8F%E5%AF%BC%E6%95%B0"><span class="nav-number">1.3.2.</span> <span class="nav-text">2.偏导数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E6%A2%AF%E5%BA%A6"><span class="nav-number">1.3.3.</span> <span class="nav-text">3.梯度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E6%A2%AF%E5%BA%A6"><span class="nav-number">1.3.4.</span> <span class="nav-text">4. 神经网络的梯度</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="nav-number">1.4.</span> <span class="nav-text">四、学习算法的实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E6%95%B0%E5%80%BC%E5%BE%AE%E5%88%86%E5%92%8C%E8%AF%AF%E5%B7%AE%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%9A%84%E5%BC%82%E5%90%8C"><span class="nav-number">1.5.</span> <span class="nav-text">五、数值微分和误差反向传播的异同</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%AD%A6%E4%B9%A0"><span class="nav-number">1.</span> <span class="nav-text">第四章 神经网络的学习</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0"><span class="nav-number">1.1.</span> <span class="nav-text">一、损失函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%A4%E5%8F%89%E7%86%B5"><span class="nav-number">1.1.1.</span> <span class="nav-text">1. 交叉熵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mini-batch"><span class="nav-number">1.1.2.</span> <span class="nav-text">2. mini-batch</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%AE%BE%E5%AE%9A%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0"><span class="nav-number">1.2.</span> <span class="nav-text">二、为什么要设定损失函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E6%95%B0%E5%80%BC%E5%BE%AE%E5%88%86"><span class="nav-number">1.3.</span> <span class="nav-text">三、数值微分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%BC%E6%95%B0"><span class="nav-number">1.3.1.</span> <span class="nav-text">1. 导数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%81%8F%E5%AF%BC%E6%95%B0"><span class="nav-number">1.3.2.</span> <span class="nav-text">2.偏导数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A2%AF%E5%BA%A6"><span class="nav-number">1.3.3.</span> <span class="nav-text">3.梯度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E6%A2%AF%E5%BA%A6"><span class="nav-number">1.3.4.</span> <span class="nav-text">4. 神经网络的梯度</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="nav-number">1.4.</span> <span class="nav-text">四、学习算法的实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E6%95%B0%E5%80%BC%E5%BE%AE%E5%88%86%E5%92%8C%E8%AF%AF%E5%B7%AE%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%9A%84%E5%BC%82%E5%90%8C"><span class="nav-number">1.5.</span> <span class="nav-text">五、数值微分和误差反向传播的异同</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -317,42 +317,122 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>&emsp;&emsp;笔记整理计划及主题安排<br><span id="more"></span></p>
-<h1 id="第四章-神经网络的学习"><a href="#第四章-神经网络的学习" class="headerlink" title="第四章 神经网络的学习"></a>第四章 神经网络的学习</h1><h2 id="一、损失函数"><a href="#一、损失函数" class="headerlink" title="一、损失函数"></a>一、损失函数</h2><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530082928091.png" alt="image-20220530082928091"></p>
-<h3 id="1-交叉熵"><a href="#1-交叉熵" class="headerlink" title="1. 交叉熵"></a>1. 交叉熵</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083314169.png" alt="image-20220530083314169"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083351700.png" alt="image-20220530083351700"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083423719.png" alt="image-20220530083423719"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083518570.png" alt="image-20220530083518570"></p>
-<h3 id="2-mini-batch"><a href="#2-mini-batch" class="headerlink" title="2. mini-batch"></a>2. mini-batch</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083924600.png" alt="image-20220530083924600"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083934419.png" alt="image-20220530083934419"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530084056106.png" alt="image-20220530084056106"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530084423844.png" alt="image-20220530084423844"></p>
-<h2 id="二、为什么要设定损失函数"><a href="#二、为什么要设定损失函数" class="headerlink" title="二、为什么要设定损失函数"></a>二、为什么要设定损失函数</h2><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085021842.png" alt="image-20220530085021842"></p>
-<h2 id="三、数值微分"><a href="#三、数值微分" class="headerlink" title="三、数值微分"></a>三、数值微分</h2><h3 id="1-导数"><a href="#1-导数" class="headerlink" title="1. 导数"></a>1. 导数</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085155959.png" alt="image-20220530085155959"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085256283.png" alt="image-20220530085256283"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085306775.png" alt="image-20220530085306775"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085420423.png" alt="image-20220530085420423"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085439086.png" alt="image-20220530085439086"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085507527.png" alt="image-20220530085507527"></p>
-<h3 id="2-偏导数"><a href="#2-偏导数" class="headerlink" title="2.偏导数"></a>2.偏导数</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085811933.png" alt="image-20220530085811933"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085825410.png" alt="image-20220530085825410"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085836646.png" alt="image-20220530085836646"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085859060.png" alt="image-20220530085859060"></p>
-<h3 id="3-梯度"><a href="#3-梯度" class="headerlink" title="3.梯度"></a>3.梯度</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090402170.png" alt="image-20220530090402170"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090423979.png" alt="image-20220530090423979"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090439218.png" alt="image-20220530090439218"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090501519.png" alt="image-20220530090501519"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090643470.png" alt="image-20220530090643470"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090733183.png" alt="image-20220530090733183"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090824458.png" alt="image-20220530090824458"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091042661.png" alt="image-20220530091042661"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091022435.png" alt="image-20220530091022435"></p>
-<h3 id="4-神经网络的梯度"><a href="#4-神经网络的梯度" class="headerlink" title="4. 神经网络的梯度"></a>4. 神经网络的梯度</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091210411.png" alt="image-20220530091210411"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091222262.png" alt="image-20220530091222262"></p>
-<h2 id="四、学习算法的实现"><a href="#四、学习算法的实现" class="headerlink" title="四、学习算法的实现"></a>四、学习算法的实现</h2><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530093253325.png" alt="image-20220530093253325"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530093331313.png" alt="image-20220530093331313"></p>
-<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530094347928.png" alt="image-20220530094347928"></p>
-<h2 id="五、数值微分和误差反向传播的异同"><a href="#五、数值微分和误差反向传播的异同" class="headerlink" title="五、数值微分和误差反向传播的异同"></a>五、数值微分和误差反向传播的异同</h2><p>&emsp;<br>&emsp;<br>&emsp;<br>&emsp;</p>
+        <p>  笔记整理计划及主题安排 <span id="more"></span></p>
+<h1 id="第四章-神经网络的学习">第四章 神经网络的学习</h1>
+<h2 id="一损失函数">一、损失函数</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530082928091.png" alt="image-20220530082928091" /><figcaption aria-hidden="true">image-20220530082928091</figcaption>
+</figure>
+<h3 id="交叉熵">1. 交叉熵</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083314169.png" alt="image-20220530083314169" /><figcaption aria-hidden="true">image-20220530083314169</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083351700.png" alt="image-20220530083351700" /><figcaption aria-hidden="true">image-20220530083351700</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083423719.png" alt="image-20220530083423719" /><figcaption aria-hidden="true">image-20220530083423719</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083518570.png" alt="image-20220530083518570" /><figcaption aria-hidden="true">image-20220530083518570</figcaption>
+</figure>
+<h3 id="mini-batch">2. mini-batch</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083924600.png" alt="image-20220530083924600" /><figcaption aria-hidden="true">image-20220530083924600</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083934419.png" alt="image-20220530083934419" /><figcaption aria-hidden="true">image-20220530083934419</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530084056106.png" alt="image-20220530084056106" /><figcaption aria-hidden="true">image-20220530084056106</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530084423844.png" alt="image-20220530084423844" /><figcaption aria-hidden="true">image-20220530084423844</figcaption>
+</figure>
+<h2 id="二为什么要设定损失函数">二、为什么要设定损失函数</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085021842.png" alt="image-20220530085021842" /><figcaption aria-hidden="true">image-20220530085021842</figcaption>
+</figure>
+<h2 id="三数值微分">三、数值微分</h2>
+<h3 id="导数">1. 导数</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085155959.png" alt="image-20220530085155959" /><figcaption aria-hidden="true">image-20220530085155959</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085256283.png" alt="image-20220530085256283" /><figcaption aria-hidden="true">image-20220530085256283</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085306775.png" alt="image-20220530085306775" /><figcaption aria-hidden="true">image-20220530085306775</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085420423.png" alt="image-20220530085420423" /><figcaption aria-hidden="true">image-20220530085420423</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085439086.png" alt="image-20220530085439086" /><figcaption aria-hidden="true">image-20220530085439086</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085507527.png" alt="image-20220530085507527" /><figcaption aria-hidden="true">image-20220530085507527</figcaption>
+</figure>
+<h3 id="偏导数">2.偏导数</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085811933.png" alt="image-20220530085811933" /><figcaption aria-hidden="true">image-20220530085811933</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085825410.png" alt="image-20220530085825410" /><figcaption aria-hidden="true">image-20220530085825410</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085836646.png" alt="image-20220530085836646" /><figcaption aria-hidden="true">image-20220530085836646</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085859060.png" alt="image-20220530085859060" /><figcaption aria-hidden="true">image-20220530085859060</figcaption>
+</figure>
+<h3 id="梯度">3.梯度</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090402170.png" alt="image-20220530090402170" /><figcaption aria-hidden="true">image-20220530090402170</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090423979.png" alt="image-20220530090423979" /><figcaption aria-hidden="true">image-20220530090423979</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090439218.png" alt="image-20220530090439218" /><figcaption aria-hidden="true">image-20220530090439218</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090501519.png" alt="image-20220530090501519" /><figcaption aria-hidden="true">image-20220530090501519</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090643470.png" alt="image-20220530090643470" /><figcaption aria-hidden="true">image-20220530090643470</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090733183.png" alt="image-20220530090733183" /><figcaption aria-hidden="true">image-20220530090733183</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090824458.png" alt="image-20220530090824458" /><figcaption aria-hidden="true">image-20220530090824458</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091042661.png" alt="image-20220530091042661" /><figcaption aria-hidden="true">image-20220530091042661</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091022435.png" alt="image-20220530091022435" /><figcaption aria-hidden="true">image-20220530091022435</figcaption>
+</figure>
+<h3 id="神经网络的梯度">4. 神经网络的梯度</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091210411.png" alt="image-20220530091210411" /><figcaption aria-hidden="true">image-20220530091210411</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091222262.png" alt="image-20220530091222262" /><figcaption aria-hidden="true">image-20220530091222262</figcaption>
+</figure>
+<h2 id="四学习算法的实现">四、学习算法的实现</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530093253325.png" alt="image-20220530093253325" /><figcaption aria-hidden="true">image-20220530093253325</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530093331313.png" alt="image-20220530093331313" /><figcaption aria-hidden="true">image-20220530093331313</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530094347928.png" alt="image-20220530094347928" /><figcaption aria-hidden="true">image-20220530094347928</figcaption>
+</figure>
+<h2 id="五数值微分和误差反向传播的异同">五、数值微分和误差反向传播的异同</h2>
+<p>       </p>
 
     </div>
 
