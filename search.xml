@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>感知机和神经网络基础</title>
+    <url>/daybreak/2018/1-perceptron-and-nn-basic/</url>
+    <content><![CDATA[<p>&emsp;&emsp;笔记整理计划及主题安排<br><span id="more"></span></p>
+<h1 id="第二章-感知机"><a href="#第二章-感知机" class="headerlink" title="第二章 感知机"></a>第二章 感知机</h1><h2 id="一、感知机是什么"><a href="#一、感知机是什么" class="headerlink" title="一、感知机是什么"></a>一、感知机是什么</h2><p>感知机接收多个输入信号，输出一个信号。图2-1 是一个接收两个输入信号的感知机的例子。x1、x2 是输入信号，y 是输出信号，w1、w2 是权重（w是weight 的首字母）。图中的○称为“神经元”或者“节点”。输入信号被送往神经元时，会被分别乘以固定的权重（w1x1、w2x2）。神经元会计算传送过来的信号的总和，只有当这个总和超过了某个界限值时，才会输出1。这也称为“神经元被激活” 。这里将这个界限值称为阈值，用符号θ 表示。</p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220529084108599.png" alt="image-20220529084108599"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220529084133033.png" alt="image-20220529084133033"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220529084449456.png" alt="image-20220529084449456"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530065757206.png" alt="image-20220530065757206"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220529084530874.png" alt="image-20220529084530874"></p>
+<h1 id="第三章-神经网络"><a href="#第三章-神经网络" class="headerlink" title="第三章 神经网络"></a>第三章 神经网络</h1><h2 id="一、从感知机到神经网络"><a href="#一、从感知机到神经网络" class="headerlink" title="一、从感知机到神经网络"></a>一、从感知机到神经网络</h2><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530070027997.png" alt="image-20220530070027997"></p>
+<h2 id="二、激活函数"><a href="#二、激活函数" class="headerlink" title="二、激活函数"></a>二、激活函数</h2><h3 id="1-sigmoid"><a href="#1-sigmoid" class="headerlink" title="1. sigmoid"></a>1. sigmoid</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530070249746.png" alt="image-20220530070249746"></p>
+<h3 id="2-阶跃函数"><a href="#2-阶跃函数" class="headerlink" title="2. 阶跃函数"></a>2. 阶跃函数</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530070650996.png" alt="image-20220530070650996"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530070705282.png" alt="image-20220530070705282"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530070718708.png" alt="image-20220530070718708"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530070734454.png" alt="image-20220530070734454"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530070751191.png" alt="image-20220530070751191"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530070808052.png" alt="image-20220530070808052"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530070824114.png" alt="image-20220530070824114"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530070837717.png" alt="image-20220530070837717"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530071440232.png" alt="image-20220530071440232"></p>
+<h3 id="3-ReLU"><a href="#3-ReLU" class="headerlink" title="3. ReLU"></a>3. ReLU</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530071553594.png" alt="image-20220530071553594"></p>
+<h3 id="4-多维数组"><a href="#4-多维数组" class="headerlink" title="4.多维数组"></a>4.多维数组</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530071822243.png" alt="image-20220530071822243"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530071900257.png" alt="image-20220530071900257"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530072148778.png" alt="image-20220530072148778"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530072158622.png" alt="image-20220530072158622"></p>
+<p><strong>dot、multiply、*三者之间的区别</strong></p>
+<h3 id="5-softmax"><a href="#5-softmax" class="headerlink" title="5. softmax"></a>5. softmax</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530075019377.png" alt="image-20220530075019377"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530075040598.png" alt="image-20220530075040598"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530075551646.png" alt="image-20220530075551646"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530080108310.png" alt="image-20220530080108310"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530080137478.png" alt="image-20220530080137478"></p>
+<h4 id="5-1-softmax-重要性质"><a href="#5-1-softmax-重要性质" class="headerlink" title="5.1 softmax 重要性质"></a>5.1 softmax 重要性质</h4><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530080343596.png" alt="image-20220530080343596"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530080412243.png" alt="image-20220530080412243"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530080421705.png" alt="image-20220530080421705"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530080327625.png" alt="image-20220530080327625"></p>
+<p>&emsp;<br>&emsp;<br>&emsp;<br>&emsp;</p>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习入门</tag>
+        <tag>感知机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>神经网络学习</title>
+    <url>/daybreak/2018/2-nn-train/</url>
+    <content><![CDATA[<p>&emsp;&emsp;笔记整理计划及主题安排<br><span id="more"></span></p>
+<h1 id="第四章-神经网络的学习"><a href="#第四章-神经网络的学习" class="headerlink" title="第四章 神经网络的学习"></a>第四章 神经网络的学习</h1><h2 id="一、损失函数"><a href="#一、损失函数" class="headerlink" title="一、损失函数"></a>一、损失函数</h2><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530082928091.png" alt="image-20220530082928091"></p>
+<h3 id="1-交叉熵"><a href="#1-交叉熵" class="headerlink" title="1. 交叉熵"></a>1. 交叉熵</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083314169.png" alt="image-20220530083314169"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083351700.png" alt="image-20220530083351700"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083423719.png" alt="image-20220530083423719"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083518570.png" alt="image-20220530083518570"></p>
+<h3 id="2-mini-batch"><a href="#2-mini-batch" class="headerlink" title="2. mini-batch"></a>2. mini-batch</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083924600.png" alt="image-20220530083924600"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083934419.png" alt="image-20220530083934419"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530084056106.png" alt="image-20220530084056106"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530084423844.png" alt="image-20220530084423844"></p>
+<h2 id="二、为什么要设定损失函数"><a href="#二、为什么要设定损失函数" class="headerlink" title="二、为什么要设定损失函数"></a>二、为什么要设定损失函数</h2><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085021842.png" alt="image-20220530085021842"></p>
+<h2 id="三、数值微分"><a href="#三、数值微分" class="headerlink" title="三、数值微分"></a>三、数值微分</h2><h3 id="1-导数"><a href="#1-导数" class="headerlink" title="1. 导数"></a>1. 导数</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085155959.png" alt="image-20220530085155959"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085256283.png" alt="image-20220530085256283"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085306775.png" alt="image-20220530085306775"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085420423.png" alt="image-20220530085420423"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085439086.png" alt="image-20220530085439086"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085507527.png" alt="image-20220530085507527"></p>
+<h3 id="2-偏导数"><a href="#2-偏导数" class="headerlink" title="2.偏导数"></a>2.偏导数</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085811933.png" alt="image-20220530085811933"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085825410.png" alt="image-20220530085825410"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085836646.png" alt="image-20220530085836646"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085859060.png" alt="image-20220530085859060"></p>
+<h3 id="3-梯度"><a href="#3-梯度" class="headerlink" title="3.梯度"></a>3.梯度</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090402170.png" alt="image-20220530090402170"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090423979.png" alt="image-20220530090423979"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090439218.png" alt="image-20220530090439218"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090501519.png" alt="image-20220530090501519"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090643470.png" alt="image-20220530090643470"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090733183.png" alt="image-20220530090733183"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090824458.png" alt="image-20220530090824458"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091042661.png" alt="image-20220530091042661"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091022435.png" alt="image-20220530091022435"></p>
+<h3 id="4-神经网络的梯度"><a href="#4-神经网络的梯度" class="headerlink" title="4. 神经网络的梯度"></a>4. 神经网络的梯度</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091210411.png" alt="image-20220530091210411"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091222262.png" alt="image-20220530091222262"></p>
+<h2 id="四、学习算法的实现"><a href="#四、学习算法的实现" class="headerlink" title="四、学习算法的实现"></a>四、学习算法的实现</h2><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530093253325.png" alt="image-20220530093253325"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530093331313.png" alt="image-20220530093331313"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530094347928.png" alt="image-20220530094347928"></p>
+<h2 id="五、数值微分和误差反向传播的异同"><a href="#五、数值微分和误差反向传播的异同" class="headerlink" title="五、数值微分和误差反向传播的异同"></a>五、数值微分和误差反向传播的异同</h2><p>&emsp;<br>&emsp;<br>&emsp;<br>&emsp;</p>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习入门</tag>
+        <tag>损失函数</tag>
+        <tag>数值微分</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>误差反向传播</title>
+    <url>/daybreak/2018/3-bp-basic/</url>
+    <content><![CDATA[<p>&emsp;&emsp;笔记整理计划及主题安排<br><span id="more"></span></p>
+<h1 id="第五章-误差反向传播"><a href="#第五章-误差反向传播" class="headerlink" title="第五章 误差反向传播"></a>第五章 误差反向传播</h1><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220601093506607.png" alt="image-20220601093506607"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220601093525417.png" alt="image-20220601093525417"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220601093541643.png" alt="image-20220601093541643"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220601093555075.png" alt="image-20220601093555075"></p>
+<p>&emsp;<br>&emsp;<br>&emsp;<br>&emsp;</p>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习入门</tag>
+        <tag>误差反向传播</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>卷积网络</title>
+    <url>/daybreak/2018/5-nn-cnn.basic/</url>
+    <content><![CDATA[<p>&emsp;&emsp;笔记整理计划及主题安排<br><span id="more"></span></p>
+<h1 id="第七章-卷积神经网路"><a href="#第七章-卷积神经网路" class="headerlink" title="第七章 卷积神经网路"></a>第七章 卷积神经网路</h1><h2 id="二、卷积层"><a href="#二、卷积层" class="headerlink" title="二、卷积层"></a>二、卷积层</h2><h3 id="1-全连接层存在的问题"><a href="#1-全连接层存在的问题" class="headerlink" title="1. 全连接层存在的问题"></a>1. 全连接层存在的问题</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074135031.png" alt="image-20220604074135031"></p>
+<p>再一个就是参数量巨大</p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074341399.png" alt="image-20220604074341399"></p>
+<p><strong>一个核，一个偏置</strong></p>
+<h3 id="2-填充"><a href="#2-填充" class="headerlink" title="2. 填充"></a>2. 填充</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074511634.png" alt="image-20220604074511634"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074548116.png" alt="image-20220604074548116"></p>
+<p>同时为了可以更好的获取到图片边缘的信息</p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074654682.png" alt="image-20220604074654682"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074831619.png" alt="image-20220604074831619"></p>
+<p><strong>1 * 1 卷积的作用</strong></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074931303.png" alt="image-20220604074931303"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074957409.png" alt="image-20220604074957409"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075027270.png" alt="image-20220604075027270"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075116754.png" alt="image-20220604075116754"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075143624.png" alt="image-20220604075143624"></p>
+<h3 id="3-批处理"><a href="#3-批处理" class="headerlink" title="3. 批处理"></a>3. 批处理</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075435924.png" alt="image-20220604075435924"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075449833.png" alt="image-20220604075449833"></p>
+<h3 id="4-池化"><a href="#4-池化" class="headerlink" title="4. 池化"></a>4. 池化</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075602056.png" alt="image-20220604075602056"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075649742.png" alt="image-20220604075649742"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075706895.png" alt="image-20220604075706895"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075727344.png" alt="image-20220604075727344"></p>
+<h2 id="四、卷积层和池化层的实现"><a href="#四、卷积层和池化层的实现" class="headerlink" title="四、卷积层和池化层的实现"></a>四、卷积层和池化层的实现</h2><h3 id="1-卷积层的实现"><a href="#1-卷积层的实现" class="headerlink" title="1. 卷积层的实现"></a>1. 卷积层的实现</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604080851694.png" alt="image-20220604080851694"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604080912246.png" alt="image-20220604080912246"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604080926785.png" alt="image-20220604080926785"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604080946265.png" alt="image-20220604080946265"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604081024900.png" alt="image-20220604081024900"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604081041554.png" alt="image-20220604081041554"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604081109767.png" alt="image-20220604081109767"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604081124744.png" alt="image-20220604081124744"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604081634872.png" alt="image-20220604081634872"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604081657365.png" alt="image-20220604081657365"></p>
+<h3 id="2-池化层的实现"><a href="#2-池化层的实现" class="headerlink" title="2. 池化层的实现"></a>2. 池化层的实现</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604082205733.png" alt="image-20220604082205733"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604082221389.png" alt="image-20220604082221389"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604082237530.png" alt="image-20220604082237530"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604082432628.png" alt="image-20220604082432628"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604082410569.png" alt="image-20220604082410569"></p>
+<h1 id="第八章-深度学习"><a href="#第八章-深度学习" class="headerlink" title="第八章 深度学习"></a>第八章 深度学习</h1><h2 id="一、加深网络"><a href="#一、加深网络" class="headerlink" title="一、加深网络"></a>一、加深网络</h2><h3 id="1-加深层的意义"><a href="#1-加深层的意义" class="headerlink" title="1. 加深层的意义"></a>1. 加深层的意义</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604084803723.png" alt="image-20220604084803723"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604084819852.png" alt="image-20220604084819852"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604084835105.png" alt="image-20220604084835105"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604085008593.png" alt="image-20220604085008593"></p>
+<p>&emsp;<br>&emsp;<br>&emsp;<br>&emsp;</p>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习入门</tag>
+        <tag>CNN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算图</title>
+    <url>/daybreak/2018/6-Computation-graph/</url>
+    <content><![CDATA[<p>&emsp;&emsp;笔记整理计划及主题安排<br><span id="more"></span></p>
+<h1 id="Softmax-with-Loss层的计算图"><a href="#Softmax-with-Loss层的计算图" class="headerlink" title="Softmax-with-Loss层的计算图"></a>Softmax-with-Loss层的计算图</h1><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103222013.png" alt="image-20220604103222013"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103240932.png" alt="image-20220604103240932"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103305732.png" alt="image-20220604103305732"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103317190.png" alt="image-20220604103317190"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103327318.png" alt="image-20220604103327318"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103341196.png" alt="image-20220604103341196"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103354548.png" alt="image-20220604103354548"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103409641.png" alt="image-20220604103409641"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103421802.png" alt="image-20220604103421802"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103440707.png" alt="image-20220604103440707"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103517025.png" alt="image-20220604103517025"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103540044.png" alt="image-20220604103540044"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103555923.png" alt="image-20220604103555923"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103612191.png" alt="image-20220604103612191"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103633190.png" alt="image-20220604103633190"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604103648949.png" alt="image-20220604103648949"></p>
+<p>&emsp;<br>&emsp;<br>&emsp;<br>&emsp;</p>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习入门</tag>
+        <tag>计算图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习技巧理论</title>
+    <url>/daybreak/2018/4-nn-learning-teeory/</url>
+    <content><![CDATA[<p>&emsp;&emsp;笔记整理计划及主题安排<br><span id="more"></span></p>
+<h1 id="第六章-与学习相关的技巧"><a href="#第六章-与学习相关的技巧" class="headerlink" title="第六章 与学习相关的技巧"></a>第六章 与学习相关的技巧</h1><h2 id="6-1参数更新"><a href="#6-1参数更新" class="headerlink" title="6.1参数更新"></a>6.1参数更新</h2><h3 id="1-SGD"><a href="#1-SGD" class="headerlink" title="1. SGD"></a>1. SGD</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602073639217.png" alt="image-20220602073639217"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602073700374.png" alt="image-20220602073700374"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602073717803.png" alt="image-20220602073717803"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602073917179.png" alt="image-20220602073917179"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602073934388.png" alt="image-20220602073934388"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602074011917.png" alt="image-20220602074011917"></p>
+<h3 id="2-Momentum"><a href="#2-Momentum" class="headerlink" title="2. Momentum"></a>2. Momentum</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602074117859.png" alt="image-20220602074117859"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602074416235.png" alt="image-20220602074416235"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602074428436.png" alt="image-20220602074428436"></p>
+<h3 id="3-AdaGrad"><a href="#3-AdaGrad" class="headerlink" title="3. AdaGrad"></a>3. AdaGrad</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602074550936.png" alt="image-20220602074550936"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602074613630.png" alt="image-20220602074613630"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602074657344.png" alt="image-20220602074657344"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602074810626.png" alt="image-20220602074810626"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602074830345.png" alt="image-20220602074830345"></p>
+<h3 id="4-Adam"><a href="#4-Adam" class="headerlink" title="4. Adam"></a>4. Adam</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602074959749.png" alt="image-20220602074959749"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602075016576.png" alt="image-20220602075016576"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602075042271.png" alt="image-20220602075042271"></p>
+<h2 id="6-2-权重初始值"><a href="#6-2-权重初始值" class="headerlink" title="6.2 权重初始值"></a>6.2 权重初始值</h2><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602082650219.png" alt="image-20220602082650219"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602082700686.png" alt="image-20220602082700686"></p>
+<h3 id="1-表现力受限问题"><a href="#1-表现力受限问题" class="headerlink" title="1. 表现力受限问题"></a>1. 表现力受限问题</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602083410294.png" alt="image-20220602083410294"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602083438973.png" alt="image-20220602083438973"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602083508536.png" alt="image-20220602083508536"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602083528513.png" alt="image-20220602083528513"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602083710340.png" alt="image-20220602083710340"></p>
+<h3 id="2-ReLU初始值"><a href="#2-ReLU初始值" class="headerlink" title="2. ReLU初始值"></a>2. ReLU初始值</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602083821308.png" alt="image-20220602083821308"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602084019667.png" alt="image-20220602084019667"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602083948468.png" alt="image-20220602083948468"></p>
+<h2 id="6-3-Batch-Normalization"><a href="#6-3-Batch-Normalization" class="headerlink" title="6.3 Batch Normalization"></a>6.3 Batch Normalization</h2><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602084234005.png" alt="image-20220602084234005"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602084336135.png" alt="image-20220602084336135"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602084432811.png" alt="image-20220602084432811"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602084517058.png" alt="image-20220602084517058"></p>
+<p>​    <img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602084545277.png" alt="image-20220602084545277"></p>
+<h2 id="6-4-正则化"><a href="#6-4-正则化" class="headerlink" title="6.4 正则化"></a>6.4 正则化</h2><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602084741778.png" alt="image-20220602084741778"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602084814115.png" alt="image-20220602084814115"></p>
+<h3 id="1-权值衰减（Weight-Decay）"><a href="#1-权值衰减（Weight-Decay）" class="headerlink" title="1. 权值衰减（Weight Decay）"></a>1. 权值衰减（Weight Decay）</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602085037693.png" alt="image-20220602085037693"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602085229412.png" alt="image-20220602085229412"></p>
+<h3 id="2-Dropout"><a href="#2-Dropout" class="headerlink" title="2. Dropout"></a>2. Dropout</h3><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602085524626.png" alt="image-20220602085524626"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602085610970.png" alt="image-20220602085610970"></p>
+<h2 id="6-5-超参验证"><a href="#6-5-超参验证" class="headerlink" title="6.5 超参验证"></a>6.5 超参验证</h2><p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602090304113.png" alt="image-20220602090304113"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602090336734.png" alt="image-20220602090336734"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602090644333.png" alt="image-20220602090644333"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602090658060.png" alt="image-20220602090658060"></p>
+<p><img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220602090749258.png" alt="image-20220602090749258"></p>
+<p>&emsp;<br>&emsp;<br>&emsp;<br>&emsp;</p>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习入门</tag>
+        <tag>学习技巧理论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>笔记整理计划及主题安排</title>
+    <url>/daybreak/2028/TO-DO-LIST/</url>
+    <content><![CDATA[<p>&emsp;&emsp;笔记整理计划及主题安排<br><span id="more"></span></p>
+<ol>
+<li>梯度下降理论</li>
+<li>反向传播理论</li>
+<li>计算图理论及其在反向传播中的应用</li>
+<li>优化器综述</li>
+<li>CNN中1*1卷积的作用</li>
+<li>numpy广播机制</li>
+<li>numpy dot，multiply，*三种乘法运算的差别</li>
+<li>激活函数综述</li>
+<li>损失函数综述</li>
+<li>为什么加入正则化项可以抑制过拟合</li>
+<li>数值微分和反向传播的异同</li>
+<li>用数值微分debug反向传播是否有bug</li>
+<li>CNN“层数少，每层神经元数目多”和“层数多，每层神经元数目少”两种策略为什么后者更好</li>
+</ol>
+<script type="math/tex; mode=display">\begin{align}
+-4 + 5x &= 2 + y \\
+w + 2 &= -1 + w \\
+ab &= cb
+\end{align}</script>]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>Todo</tag>
+      </tags>
+  </entry>
+</search>
