@@ -118,135 +118,6 @@
       </tags>
   </entry>
   <entry>
-    <title>神经网络学习</title>
-    <url>/daybreak/2018/2-nn-train/</url>
-    <content><![CDATA[<p>  笔记整理计划及主题安排 <span id="more"></span></p>
-<h1 id="第四章-神经网络的学习">第四章 神经网络的学习</h1>
-<h2 id="一损失函数">一、损失函数</h2>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530082928091.png" alt="image-20220530082928091" /><figcaption aria-hidden="true">image-20220530082928091</figcaption>
-</figure>
-<h3 id="交叉熵">1. 交叉熵</h3>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083314169.png" alt="image-20220530083314169" /><figcaption aria-hidden="true">image-20220530083314169</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083351700.png" alt="image-20220530083351700" /><figcaption aria-hidden="true">image-20220530083351700</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083423719.png" alt="image-20220530083423719" /><figcaption aria-hidden="true">image-20220530083423719</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083518570.png" alt="image-20220530083518570" /><figcaption aria-hidden="true">image-20220530083518570</figcaption>
-</figure>
-<h3 id="mini-batch">2. mini-batch</h3>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083924600.png" alt="image-20220530083924600" /><figcaption aria-hidden="true">image-20220530083924600</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083934419.png" alt="image-20220530083934419" /><figcaption aria-hidden="true">image-20220530083934419</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530084056106.png" alt="image-20220530084056106" /><figcaption aria-hidden="true">image-20220530084056106</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530084423844.png" alt="image-20220530084423844" /><figcaption aria-hidden="true">image-20220530084423844</figcaption>
-</figure>
-<h2 id="二为什么要设定损失函数">二、为什么要设定损失函数</h2>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085021842.png" alt="image-20220530085021842" /><figcaption aria-hidden="true">image-20220530085021842</figcaption>
-</figure>
-<h2 id="三数值微分">三、数值微分</h2>
-<h3 id="导数">1. 导数</h3>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085155959.png" alt="image-20220530085155959" /><figcaption aria-hidden="true">image-20220530085155959</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085256283.png" alt="image-20220530085256283" /><figcaption aria-hidden="true">image-20220530085256283</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085306775.png" alt="image-20220530085306775" /><figcaption aria-hidden="true">image-20220530085306775</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085420423.png" alt="image-20220530085420423" /><figcaption aria-hidden="true">image-20220530085420423</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085439086.png" alt="image-20220530085439086" /><figcaption aria-hidden="true">image-20220530085439086</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085507527.png" alt="image-20220530085507527" /><figcaption aria-hidden="true">image-20220530085507527</figcaption>
-</figure>
-<h3 id="偏导数">2.偏导数</h3>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085811933.png" alt="image-20220530085811933" /><figcaption aria-hidden="true">image-20220530085811933</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085825410.png" alt="image-20220530085825410" /><figcaption aria-hidden="true">image-20220530085825410</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085836646.png" alt="image-20220530085836646" /><figcaption aria-hidden="true">image-20220530085836646</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085859060.png" alt="image-20220530085859060" /><figcaption aria-hidden="true">image-20220530085859060</figcaption>
-</figure>
-<h3 id="梯度">3.梯度</h3>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090402170.png" alt="image-20220530090402170" /><figcaption aria-hidden="true">image-20220530090402170</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090423979.png" alt="image-20220530090423979" /><figcaption aria-hidden="true">image-20220530090423979</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090439218.png" alt="image-20220530090439218" /><figcaption aria-hidden="true">image-20220530090439218</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090501519.png" alt="image-20220530090501519" /><figcaption aria-hidden="true">image-20220530090501519</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090643470.png" alt="image-20220530090643470" /><figcaption aria-hidden="true">image-20220530090643470</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090733183.png" alt="image-20220530090733183" /><figcaption aria-hidden="true">image-20220530090733183</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090824458.png" alt="image-20220530090824458" /><figcaption aria-hidden="true">image-20220530090824458</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091042661.png" alt="image-20220530091042661" /><figcaption aria-hidden="true">image-20220530091042661</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091022435.png" alt="image-20220530091022435" /><figcaption aria-hidden="true">image-20220530091022435</figcaption>
-</figure>
-<h3 id="神经网络的梯度">4. 神经网络的梯度</h3>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091210411.png" alt="image-20220530091210411" /><figcaption aria-hidden="true">image-20220530091210411</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091222262.png" alt="image-20220530091222262" /><figcaption aria-hidden="true">image-20220530091222262</figcaption>
-</figure>
-<h2 id="四学习算法的实现">四、学习算法的实现</h2>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530093253325.png" alt="image-20220530093253325" /><figcaption aria-hidden="true">image-20220530093253325</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530093331313.png" alt="image-20220530093331313" /><figcaption aria-hidden="true">image-20220530093331313</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530094347928.png" alt="image-20220530094347928" /><figcaption aria-hidden="true">image-20220530094347928</figcaption>
-</figure>
-<h2 id="五数值微分和误差反向传播的异同">五、数值微分和误差反向传播的异同</h2>
-<p>       </p>
-]]></content>
-      <categories>
-        <category>深度学习</category>
-      </categories>
-      <tags>
-        <tag>深度学习入门</tag>
-        <tag>损失函数</tag>
-        <tag>数值微分</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>误差反向传播</title>
     <url>/daybreak/2018/3-bp-basic/</url>
     <content><![CDATA[<p>  笔记整理计划及主题安排 <span id="more"></span></p>
@@ -271,144 +142,6 @@
       <tags>
         <tag>深度学习入门</tag>
         <tag>误差反向传播</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>卷积网络</title>
-    <url>/daybreak/2018/5-nn-cnn.basic/</url>
-    <content><![CDATA[<p>  笔记整理计划及主题安排 <span id="more"></span></p>
-<h1 id="第七章-卷积神经网路">第七章 卷积神经网路</h1>
-<h2 id="二卷积层">二、卷积层</h2>
-<h3 id="全连接层存在的问题">1. 全连接层存在的问题</h3>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074135031.png" alt="image-20220604074135031" /><figcaption aria-hidden="true">image-20220604074135031</figcaption>
-</figure>
-<p>再一个就是参数量巨大</p>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074341399.png" alt="image-20220604074341399" /><figcaption aria-hidden="true">image-20220604074341399</figcaption>
-</figure>
-<p><strong>一个核，一个偏置</strong></p>
-<h3 id="填充">2. 填充</h3>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074511634.png" alt="image-20220604074511634" /><figcaption aria-hidden="true">image-20220604074511634</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074548116.png" alt="image-20220604074548116" /><figcaption aria-hidden="true">image-20220604074548116</figcaption>
-</figure>
-<p>同时为了可以更好的获取到图片边缘的信息</p>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074654682.png" alt="image-20220604074654682" /><figcaption aria-hidden="true">image-20220604074654682</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074831619.png" alt="image-20220604074831619" /><figcaption aria-hidden="true">image-20220604074831619</figcaption>
-</figure>
-<p><strong>1 * 1 卷积的作用</strong></p>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074931303.png" alt="image-20220604074931303" /><figcaption aria-hidden="true">image-20220604074931303</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074957409.png" alt="image-20220604074957409" /><figcaption aria-hidden="true">image-20220604074957409</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075027270.png" alt="image-20220604075027270" /><figcaption aria-hidden="true">image-20220604075027270</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075116754.png" alt="image-20220604075116754" /><figcaption aria-hidden="true">image-20220604075116754</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075143624.png" alt="image-20220604075143624" /><figcaption aria-hidden="true">image-20220604075143624</figcaption>
-</figure>
-<h3 id="批处理">3. 批处理</h3>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075435924.png" alt="image-20220604075435924" /><figcaption aria-hidden="true">image-20220604075435924</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075449833.png" alt="image-20220604075449833" /><figcaption aria-hidden="true">image-20220604075449833</figcaption>
-</figure>
-<h3 id="池化">4. 池化</h3>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075602056.png" alt="image-20220604075602056" /><figcaption aria-hidden="true">image-20220604075602056</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075649742.png" alt="image-20220604075649742" /><figcaption aria-hidden="true">image-20220604075649742</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075706895.png" alt="image-20220604075706895" /><figcaption aria-hidden="true">image-20220604075706895</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075727344.png" alt="image-20220604075727344" /><figcaption aria-hidden="true">image-20220604075727344</figcaption>
-</figure>
-<h2 id="四卷积层和池化层的实现">四、卷积层和池化层的实现</h2>
-<h3 id="卷积层的实现">1. 卷积层的实现</h3>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604080851694.png" alt="image-20220604080851694" /><figcaption aria-hidden="true">image-20220604080851694</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604080912246.png" alt="image-20220604080912246" /><figcaption aria-hidden="true">image-20220604080912246</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604080926785.png" alt="image-20220604080926785" /><figcaption aria-hidden="true">image-20220604080926785</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604080946265.png" alt="image-20220604080946265" /><figcaption aria-hidden="true">image-20220604080946265</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604081024900.png" alt="image-20220604081024900" /><figcaption aria-hidden="true">image-20220604081024900</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604081041554.png" alt="image-20220604081041554" /><figcaption aria-hidden="true">image-20220604081041554</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604081109767.png" alt="image-20220604081109767" /><figcaption aria-hidden="true">image-20220604081109767</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604081124744.png" alt="image-20220604081124744" /><figcaption aria-hidden="true">image-20220604081124744</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604081634872.png" alt="image-20220604081634872" /><figcaption aria-hidden="true">image-20220604081634872</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604081657365.png" alt="image-20220604081657365" /><figcaption aria-hidden="true">image-20220604081657365</figcaption>
-</figure>
-<h3 id="池化层的实现">2. 池化层的实现</h3>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604082205733.png" alt="image-20220604082205733" /><figcaption aria-hidden="true">image-20220604082205733</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604082221389.png" alt="image-20220604082221389" /><figcaption aria-hidden="true">image-20220604082221389</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604082237530.png" alt="image-20220604082237530" /><figcaption aria-hidden="true">image-20220604082237530</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604082432628.png" alt="image-20220604082432628" /><figcaption aria-hidden="true">image-20220604082432628</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604082410569.png" alt="image-20220604082410569" /><figcaption aria-hidden="true">image-20220604082410569</figcaption>
-</figure>
-<h1 id="第八章-深度学习">第八章 深度学习</h1>
-<h2 id="一加深网络">一、加深网络</h2>
-<h3 id="加深层的意义">1. 加深层的意义</h3>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604084803723.png" alt="image-20220604084803723" /><figcaption aria-hidden="true">image-20220604084803723</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604084819852.png" alt="image-20220604084819852" /><figcaption aria-hidden="true">image-20220604084819852</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604084835105.png" alt="image-20220604084835105" /><figcaption aria-hidden="true">image-20220604084835105</figcaption>
-</figure>
-<figure>
-<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604085008593.png" alt="image-20220604085008593" /><figcaption aria-hidden="true">image-20220604085008593</figcaption>
-</figure>
-<p>       </p>
-]]></content>
-      <categories>
-        <category>深度学习</category>
-      </categories>
-      <tags>
-        <tag>深度学习入门</tag>
-        <tag>CNN</tag>
       </tags>
   </entry>
   <entry>
@@ -567,6 +300,144 @@
       </tags>
   </entry>
   <entry>
+    <title>卷积网络</title>
+    <url>/daybreak/2018/5-nn-cnn.basic/</url>
+    <content><![CDATA[<p>  笔记整理计划及主题安排 <span id="more"></span></p>
+<h1 id="第七章-卷积神经网路">第七章 卷积神经网路</h1>
+<h2 id="二卷积层">二、卷积层</h2>
+<h3 id="全连接层存在的问题">1. 全连接层存在的问题</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074135031.png" alt="image-20220604074135031" /><figcaption aria-hidden="true">image-20220604074135031</figcaption>
+</figure>
+<p>再一个就是参数量巨大</p>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074341399.png" alt="image-20220604074341399" /><figcaption aria-hidden="true">image-20220604074341399</figcaption>
+</figure>
+<p><strong>一个核，一个偏置</strong></p>
+<h3 id="填充">2. 填充</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074511634.png" alt="image-20220604074511634" /><figcaption aria-hidden="true">image-20220604074511634</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074548116.png" alt="image-20220604074548116" /><figcaption aria-hidden="true">image-20220604074548116</figcaption>
+</figure>
+<p>同时为了可以更好的获取到图片边缘的信息</p>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074654682.png" alt="image-20220604074654682" /><figcaption aria-hidden="true">image-20220604074654682</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074831619.png" alt="image-20220604074831619" /><figcaption aria-hidden="true">image-20220604074831619</figcaption>
+</figure>
+<p><strong>1 * 1 卷积的作用</strong></p>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074931303.png" alt="image-20220604074931303" /><figcaption aria-hidden="true">image-20220604074931303</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604074957409.png" alt="image-20220604074957409" /><figcaption aria-hidden="true">image-20220604074957409</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075027270.png" alt="image-20220604075027270" /><figcaption aria-hidden="true">image-20220604075027270</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075116754.png" alt="image-20220604075116754" /><figcaption aria-hidden="true">image-20220604075116754</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075143624.png" alt="image-20220604075143624" /><figcaption aria-hidden="true">image-20220604075143624</figcaption>
+</figure>
+<h3 id="批处理">3. 批处理</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075435924.png" alt="image-20220604075435924" /><figcaption aria-hidden="true">image-20220604075435924</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075449833.png" alt="image-20220604075449833" /><figcaption aria-hidden="true">image-20220604075449833</figcaption>
+</figure>
+<h3 id="池化">4. 池化</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075602056.png" alt="image-20220604075602056" /><figcaption aria-hidden="true">image-20220604075602056</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075649742.png" alt="image-20220604075649742" /><figcaption aria-hidden="true">image-20220604075649742</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075706895.png" alt="image-20220604075706895" /><figcaption aria-hidden="true">image-20220604075706895</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604075727344.png" alt="image-20220604075727344" /><figcaption aria-hidden="true">image-20220604075727344</figcaption>
+</figure>
+<h2 id="四卷积层和池化层的实现">四、卷积层和池化层的实现</h2>
+<h3 id="卷积层的实现">1. 卷积层的实现</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604080851694.png" alt="image-20220604080851694" /><figcaption aria-hidden="true">image-20220604080851694</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604080912246.png" alt="image-20220604080912246" /><figcaption aria-hidden="true">image-20220604080912246</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604080926785.png" alt="image-20220604080926785" /><figcaption aria-hidden="true">image-20220604080926785</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604080946265.png" alt="image-20220604080946265" /><figcaption aria-hidden="true">image-20220604080946265</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604081024900.png" alt="image-20220604081024900" /><figcaption aria-hidden="true">image-20220604081024900</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604081041554.png" alt="image-20220604081041554" /><figcaption aria-hidden="true">image-20220604081041554</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604081109767.png" alt="image-20220604081109767" /><figcaption aria-hidden="true">image-20220604081109767</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604081124744.png" alt="image-20220604081124744" /><figcaption aria-hidden="true">image-20220604081124744</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604081634872.png" alt="image-20220604081634872" /><figcaption aria-hidden="true">image-20220604081634872</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604081657365.png" alt="image-20220604081657365" /><figcaption aria-hidden="true">image-20220604081657365</figcaption>
+</figure>
+<h3 id="池化层的实现">2. 池化层的实现</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604082205733.png" alt="image-20220604082205733" /><figcaption aria-hidden="true">image-20220604082205733</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604082221389.png" alt="image-20220604082221389" /><figcaption aria-hidden="true">image-20220604082221389</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604082237530.png" alt="image-20220604082237530" /><figcaption aria-hidden="true">image-20220604082237530</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604082432628.png" alt="image-20220604082432628" /><figcaption aria-hidden="true">image-20220604082432628</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604082410569.png" alt="image-20220604082410569" /><figcaption aria-hidden="true">image-20220604082410569</figcaption>
+</figure>
+<h1 id="第八章-深度学习">第八章 深度学习</h1>
+<h2 id="一加深网络">一、加深网络</h2>
+<h3 id="加深层的意义">1. 加深层的意义</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604084803723.png" alt="image-20220604084803723" /><figcaption aria-hidden="true">image-20220604084803723</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604084819852.png" alt="image-20220604084819852" /><figcaption aria-hidden="true">image-20220604084819852</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604084835105.png" alt="image-20220604084835105" /><figcaption aria-hidden="true">image-20220604084835105</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220604085008593.png" alt="image-20220604085008593" /><figcaption aria-hidden="true">image-20220604085008593</figcaption>
+</figure>
+<p>       </p>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习入门</tag>
+        <tag>CNN</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>计算图</title>
     <url>/daybreak/2018/6-Computation-graph/</url>
     <content><![CDATA[<p>  笔记整理计划及主题安排 <span id="more"></span></p>
@@ -630,6 +501,689 @@
       </tags>
   </entry>
   <entry>
+    <title>神经网络学习</title>
+    <url>/daybreak/2018/2-nn-train/</url>
+    <content><![CDATA[<p>  笔记整理计划及主题安排 <span id="more"></span></p>
+<h1 id="第四章-神经网络的学习">第四章 神经网络的学习</h1>
+<h2 id="一损失函数">一、损失函数</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530082928091.png" alt="image-20220530082928091" /><figcaption aria-hidden="true">image-20220530082928091</figcaption>
+</figure>
+<h3 id="交叉熵">1. 交叉熵</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083314169.png" alt="image-20220530083314169" /><figcaption aria-hidden="true">image-20220530083314169</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083351700.png" alt="image-20220530083351700" /><figcaption aria-hidden="true">image-20220530083351700</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083423719.png" alt="image-20220530083423719" /><figcaption aria-hidden="true">image-20220530083423719</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083518570.png" alt="image-20220530083518570" /><figcaption aria-hidden="true">image-20220530083518570</figcaption>
+</figure>
+<h3 id="mini-batch">2. mini-batch</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083924600.png" alt="image-20220530083924600" /><figcaption aria-hidden="true">image-20220530083924600</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530083934419.png" alt="image-20220530083934419" /><figcaption aria-hidden="true">image-20220530083934419</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530084056106.png" alt="image-20220530084056106" /><figcaption aria-hidden="true">image-20220530084056106</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530084423844.png" alt="image-20220530084423844" /><figcaption aria-hidden="true">image-20220530084423844</figcaption>
+</figure>
+<h2 id="二为什么要设定损失函数">二、为什么要设定损失函数</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085021842.png" alt="image-20220530085021842" /><figcaption aria-hidden="true">image-20220530085021842</figcaption>
+</figure>
+<h2 id="三数值微分">三、数值微分</h2>
+<h3 id="导数">1. 导数</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085155959.png" alt="image-20220530085155959" /><figcaption aria-hidden="true">image-20220530085155959</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085256283.png" alt="image-20220530085256283" /><figcaption aria-hidden="true">image-20220530085256283</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085306775.png" alt="image-20220530085306775" /><figcaption aria-hidden="true">image-20220530085306775</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085420423.png" alt="image-20220530085420423" /><figcaption aria-hidden="true">image-20220530085420423</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085439086.png" alt="image-20220530085439086" /><figcaption aria-hidden="true">image-20220530085439086</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085507527.png" alt="image-20220530085507527" /><figcaption aria-hidden="true">image-20220530085507527</figcaption>
+</figure>
+<h3 id="偏导数">2.偏导数</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085811933.png" alt="image-20220530085811933" /><figcaption aria-hidden="true">image-20220530085811933</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085825410.png" alt="image-20220530085825410" /><figcaption aria-hidden="true">image-20220530085825410</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085836646.png" alt="image-20220530085836646" /><figcaption aria-hidden="true">image-20220530085836646</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530085859060.png" alt="image-20220530085859060" /><figcaption aria-hidden="true">image-20220530085859060</figcaption>
+</figure>
+<h3 id="梯度">3.梯度</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090402170.png" alt="image-20220530090402170" /><figcaption aria-hidden="true">image-20220530090402170</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090423979.png" alt="image-20220530090423979" /><figcaption aria-hidden="true">image-20220530090423979</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090439218.png" alt="image-20220530090439218" /><figcaption aria-hidden="true">image-20220530090439218</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090501519.png" alt="image-20220530090501519" /><figcaption aria-hidden="true">image-20220530090501519</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090643470.png" alt="image-20220530090643470" /><figcaption aria-hidden="true">image-20220530090643470</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090733183.png" alt="image-20220530090733183" /><figcaption aria-hidden="true">image-20220530090733183</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530090824458.png" alt="image-20220530090824458" /><figcaption aria-hidden="true">image-20220530090824458</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091042661.png" alt="image-20220530091042661" /><figcaption aria-hidden="true">image-20220530091042661</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091022435.png" alt="image-20220530091022435" /><figcaption aria-hidden="true">image-20220530091022435</figcaption>
+</figure>
+<h3 id="神经网络的梯度">4. 神经网络的梯度</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091210411.png" alt="image-20220530091210411" /><figcaption aria-hidden="true">image-20220530091210411</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530091222262.png" alt="image-20220530091222262" /><figcaption aria-hidden="true">image-20220530091222262</figcaption>
+</figure>
+<h2 id="四学习算法的实现">四、学习算法的实现</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530093253325.png" alt="image-20220530093253325" /><figcaption aria-hidden="true">image-20220530093253325</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530093331313.png" alt="image-20220530093331313" /><figcaption aria-hidden="true">image-20220530093331313</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654313131/daybreak/DL_RuMen/image-20220530094347928.png" alt="image-20220530094347928" /><figcaption aria-hidden="true">image-20220530094347928</figcaption>
+</figure>
+<h2 id="五数值微分和误差反向传播的异同">五、数值微分和误差反向传播的异同</h2>
+<p>       </p>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习入门</tag>
+        <tag>损失函数</tag>
+        <tag>数值微分</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Gated RNN</title>
+    <url>/daybreak/2018/Gated-RNN/</url>
+    <content><![CDATA[<p>  笔记整理计划及主题安排 <span id="more"></span></p>
+<h1 id="第六章-gated-rnn">第六章 Gated RNN</h1>
+<h2 id="一rnn的问题">一、RNN的问题</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614073550401.png" alt="image-20220614073550401" /><figcaption aria-hidden="true">image-20220614073550401</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614073657586.png" alt="image-20220614073657586" /><figcaption aria-hidden="true">image-20220614073657586</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614073713791.png" alt="image-20220614073713791" /><figcaption aria-hidden="true">image-20220614073713791</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614073850046.png" alt="image-20220614073850046" /><figcaption aria-hidden="true">image-20220614073850046</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614073904046.png" alt="image-20220614073904046" /><figcaption aria-hidden="true">image-20220614073904046</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614073917830.png" alt="image-20220614073917830" /><figcaption aria-hidden="true">image-20220614073917830</figcaption>
+</figure>
+<h3 id="梯度消失或梯度爆炸的原因">1. 梯度消失或梯度爆炸的原因</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614074415151.png" alt="image-20220614074415151" /><figcaption aria-hidden="true">image-20220614074415151</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614074430729.png" alt="image-20220614074430729" /><figcaption aria-hidden="true">image-20220614074430729</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614074457761.png" alt="image-20220614074457761" /><figcaption aria-hidden="true">image-20220614074457761</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614074528197.png" alt="image-20220614074528197" /><figcaption aria-hidden="true">image-20220614074528197</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614074541443.png" alt="image-20220614074541443" /><figcaption aria-hidden="true">image-20220614074541443</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614074604297.png" alt="image-20220614074604297" /><figcaption aria-hidden="true">image-20220614074604297</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614074622221.png" alt="image-20220614074622221" /><figcaption aria-hidden="true">image-20220614074622221</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614074634379.png" alt="image-20220614074634379" /><figcaption aria-hidden="true">image-20220614074634379</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614074701239.png" alt="image-20220614074701239" /><figcaption aria-hidden="true">image-20220614074701239</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614074717646.png" alt="image-20220614074717646" /><figcaption aria-hidden="true">image-20220614074717646</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614074734482.png" alt="image-20220614074734482" /><figcaption aria-hidden="true">image-20220614074734482</figcaption>
+</figure>
+<h3 id="梯度爆炸的对策">2. 梯度爆炸的对策</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614074928349.png" alt="image-20220614074928349" /><figcaption aria-hidden="true">image-20220614074928349</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614075252327.png" alt="image-20220614075252327" /><figcaption aria-hidden="true">image-20220614075252327</figcaption>
+</figure>
+<h2 id="二梯度消失和lstm">二、梯度消失和LSTM</h2>
+<h3 id="lstm接口">1. LSTM接口</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617080529597.png" alt="image-20220617080529597" /><figcaption aria-hidden="true">image-20220617080529597</figcaption>
+</figure>
+<h3 id="lstm层的结构">2. LSTM层的结构</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617080657042.png" alt="image-20220617080657042" /><figcaption aria-hidden="true">image-20220617080657042</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617080723624.png" alt="image-20220617080723624" /><figcaption aria-hidden="true">image-20220617080723624</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617080912582.png" alt="image-20220617080912582" /><figcaption aria-hidden="true">image-20220617080912582</figcaption>
+</figure>
+<h3 id="输出门">3. 输出门</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617081110864.png" alt="image-20220617081110864" /><figcaption aria-hidden="true">image-20220617081110864</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617081224274.png" alt="image-20220617081224274" /><figcaption aria-hidden="true">image-20220617081224274</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617081314579.png" alt="image-20220617081314579" /><figcaption aria-hidden="true">image-20220617081314579</figcaption>
+</figure>
+<h3 id="遗忘门">4. 遗忘门</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617081446009.png" alt="image-20220617081446009" /><figcaption aria-hidden="true">image-20220617081446009</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617081503283.png" alt="image-20220617081503283" /><figcaption aria-hidden="true">image-20220617081503283</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617081550198.png" alt="image-20220617081550198" /><figcaption aria-hidden="true">image-20220617081550198</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617081732028.png" alt="image-20220617081732028" /><figcaption aria-hidden="true">image-20220617081732028</figcaption>
+</figure>
+<h3 id="输入门">5. 输入门</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617081854148.png" alt="image-20220617081854148" /><figcaption aria-hidden="true">image-20220617081854148</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617081930401.png" alt="image-20220617081930401" /><figcaption aria-hidden="true">image-20220617081930401</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617082152928.png" alt="image-20220617082152928" /><figcaption aria-hidden="true">image-20220617082152928</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617082204448.png" alt="image-20220617082204448" /><figcaption aria-hidden="true">image-20220617082204448</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617082222202.png" alt="image-20220617082222202" /><figcaption aria-hidden="true">image-20220617082222202</figcaption>
+</figure>
+<h3 id="todolstm为什么可以解决梯度消失的问题">6. TODO：LSTM为什么可以解决梯度消失的问题</h3>
+<h2 id="三lstm实现">三、LSTM实现</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617082803203.png" alt="image-20220617082803203" /><figcaption aria-hidden="true">image-20220617082803203</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617082828498.png" alt="image-20220617082828498" /><figcaption aria-hidden="true">image-20220617082828498</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617082847617.png" alt="image-20220617082847617" /><figcaption aria-hidden="true">image-20220617082847617</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617082903688.png" alt="image-20220617082903688" /><figcaption aria-hidden="true">image-20220617082903688</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617083141758.png" alt="image-20220617083141758" /><figcaption aria-hidden="true">image-20220617083141758</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617083155304.png" alt="image-20220617083155304" /><figcaption aria-hidden="true">image-20220617083155304</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617083213809.png" alt="image-20220617083213809" /><figcaption aria-hidden="true">image-20220617083213809</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617083331659.png" alt="image-20220617083331659" /><figcaption aria-hidden="true">image-20220617083331659</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617083351883.png" alt="image-20220617083351883" /><figcaption aria-hidden="true">image-20220617083351883</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617083404529.png" alt="image-20220617083404529" /><figcaption aria-hidden="true">image-20220617083404529</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617084256342.png" alt="image-20220617084256342" /><figcaption aria-hidden="true">image-20220617084256342</figcaption>
+</figure>
+<h2 id="四rnnlm的进一步改进">四、RNNLM的进一步改进</h2>
+<h3 id="lstm层的多层化">1.LSTM层的多层化</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617085550197.png" alt="image-20220617085550197" /><figcaption aria-hidden="true">image-20220617085550197</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617085605106.png" alt="image-20220617085605106" /><figcaption aria-hidden="true">image-20220617085605106</figcaption>
+</figure>
+<h3 id="基于dropout抑制过拟合">2. 基于Dropout抑制过拟合</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617085711662.png" alt="image-20220617085711662" /><figcaption aria-hidden="true">image-20220617085711662</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617085734988.png" alt="image-20220617085734988" /><figcaption aria-hidden="true">image-20220617085734988</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617085754848.png" alt="image-20220617085754848" /><figcaption aria-hidden="true">image-20220617085754848</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617085825601.png" alt="image-20220617085825601" /><figcaption aria-hidden="true">image-20220617085825601</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617085946678.png" alt="image-20220617085946678" /><figcaption aria-hidden="true">image-20220617085946678</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617085958662.png" alt="image-20220617085958662" /><figcaption aria-hidden="true">image-20220617085958662</figcaption>
+</figure>
+<h3 id="权重共享">3. 权重共享</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617090130642.png" alt="image-20220617090130642" /><figcaption aria-hidden="true">image-20220617090130642</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617090150415.png" alt="image-20220617090150415" /><figcaption aria-hidden="true">image-20220617090150415</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617090208842.png" alt="image-20220617090208842" /><figcaption aria-hidden="true">image-20220617090208842</figcaption>
+</figure>
+<h2 id="五gru">五、GRU</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617091851620.png" alt="image-20220617091851620" /><figcaption aria-hidden="true">image-20220617091851620</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617092046662.png" alt="image-20220617092046662" /><figcaption aria-hidden="true">image-20220617092046662</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617092106144.png" alt="image-20220617092106144" /><figcaption aria-hidden="true">image-20220617092106144</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617092245465.png" alt="image-20220617092245465" /><figcaption aria-hidden="true">image-20220617092245465</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220617092322459.png" alt="image-20220617092322459" /><figcaption aria-hidden="true">image-20220617092322459</figcaption>
+</figure>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习进阶</tag>
+        <tag>LSTM</tag>
+        <tag>GRU</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Attention</title>
+    <url>/daybreak/2018/Attention-Basic/</url>
+    <content><![CDATA[<p>  笔记整理计划及主题安排 <span id="more"></span></p>
+<h1 id="第八章-attention">第八章 Attention</h1>
+<h2 id="一attention的结构">一、attention的结构</h2>
+<h3 id="seq2seq的问题">1. seq2seq的问题</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220622072229539.png" alt="image-20220622072229539" /><figcaption aria-hidden="true">image-20220622072229539</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220622072240377.png" alt="image-20220622072240377" /><figcaption aria-hidden="true">image-20220622072240377</figcaption>
+</figure>
+<h3 id="解码器的改进">2. 解码器的改进</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220622073027997.png" alt="image-20220622073027997" /><figcaption aria-hidden="true">image-20220622073027997</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220622075101349.png" alt="image-20220622075101349" /><figcaption aria-hidden="true">image-20220622075101349</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220622075113259.png" alt="image-20220622075113259" /><figcaption aria-hidden="true">image-20220622075113259</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220622075124381.png" alt="image-20220622075124381" /><figcaption aria-hidden="true">image-20220622075124381</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220622075137196.png" alt="image-20220622075137196" /><figcaption aria-hidden="true">image-20220622075137196</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220622075753265.png" alt="image-20220622075753265" /><figcaption aria-hidden="true">image-20220622075753265</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220622080002891.png" alt="image-20220622080002891" /><figcaption aria-hidden="true">image-20220622080002891</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220622080033994.png" alt="image-20220622080033994" /><figcaption aria-hidden="true">image-20220622080033994</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220622080045375.png" alt="image-20220622080045375" /><figcaption aria-hidden="true">image-20220622080045375</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220622080100329.png" alt="image-20220622080100329" /><figcaption aria-hidden="true">image-20220622080100329</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220622080255380.png" alt="image-20220622080255380" /><figcaption aria-hidden="true">image-20220622080255380</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220622080635541.png" alt="image-20220622080635541" /><figcaption aria-hidden="true">image-20220622080635541</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220622080656484.png" alt="image-20220622080656484" /><figcaption aria-hidden="true">image-20220622080656484</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220622080801393.png" alt="image-20220622080801393" /><figcaption aria-hidden="true">image-20220622080801393</figcaption>
+</figure>
+<h2 id="二带attention的seq2seq的实现">二、带attention的seq2seq的实现</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220622081026311.png" alt="image-20220622081026311" /><figcaption aria-hidden="true">image-20220622081026311</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220622081009951.png" alt="image-20220622081009951" /><figcaption aria-hidden="true">image-20220622081009951</figcaption>
+</figure>
+<h2 id="三attention的评价">三、attention的评价</h2>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习进阶</tag>
+        <tag>Attention</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于RNN生成文本</title>
+    <url>/daybreak/2018/RNN-Generation/</url>
+    <content><![CDATA[<p>  笔记整理计划及主题安排 <span id="more"></span></p>
+<h1 id="第七章-基于rnn生成文本">第七章 基于RNN生成文本</h1>
+<h2 id="一使用语言模型生成文本">一、使用语言模型生成文本</h2>
+<h3 id="使用rnn生成文本的步骤">1. 使用RNN生成文本的步骤</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621072540026.png" alt="image-20220621072540026" /><figcaption aria-hidden="true">image-20220621072540026</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621072809756.png" alt="image-20220621072809756" /><figcaption aria-hidden="true">image-20220621072809756</figcaption>
+</figure>
+<h2 id="二seq2seq模型">二、seq2seq模型</h2>
+<h3 id="seq2seq的原理">1. seq2seq的原理</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621074019518.png" alt="image-20220621074019518" /><figcaption aria-hidden="true">image-20220621074019518</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621074423334.png" alt="image-20220621074423334" /><figcaption aria-hidden="true">image-20220621074423334</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621074433264.png" alt="image-20220621074433264" /><figcaption aria-hidden="true">image-20220621074433264</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621074453757.png" alt="image-20220621074453757" /><figcaption aria-hidden="true">image-20220621074453757</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621074624722.png" alt="image-20220621074624722" /><figcaption aria-hidden="true">image-20220621074624722</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621074639752.png" alt="image-20220621074639752" /><figcaption aria-hidden="true">image-20220621074639752</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621074755269.png" alt="image-20220621074755269" /><figcaption aria-hidden="true">image-20220621074755269</figcaption>
+</figure>
+<h3 id="可变长度的时序数据">2. 可变长度的时序数据</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621075116160.png" alt="image-20220621075116160" /><figcaption aria-hidden="true">image-20220621075116160</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621075219749.png" alt="image-20220621075219749" /><figcaption aria-hidden="true">image-20220621075219749</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621075248066.png" alt="image-20220621075248066" /><figcaption aria-hidden="true">image-20220621075248066</figcaption>
+</figure>
+<h2 id="三seq2seq的改进">三、seq2seq的改进</h2>
+<h3 id="反转输入">1. 反转输入</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621082635178.png" alt="image-20220621082635178" /><figcaption aria-hidden="true">image-20220621082635178</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621082652958.png" alt="image-20220621082652958" /><figcaption aria-hidden="true">image-20220621082652958</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621082706183.png" alt="image-20220621082706183" /><figcaption aria-hidden="true">image-20220621082706183</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621082719066.png" alt="image-20220621082719066" /><figcaption aria-hidden="true">image-20220621082719066</figcaption>
+</figure>
+<h3 id="peeky">2. peeky</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621082753596.png" alt="image-20220621082753596" /><figcaption aria-hidden="true">image-20220621082753596</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621082739711.png" alt="image-20220621082739711" /><figcaption aria-hidden="true">image-20220621082739711</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621082820194.png" alt="image-20220621082820194" /><figcaption aria-hidden="true">image-20220621082820194</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621082839606.png" alt="image-20220621082839606" /><figcaption aria-hidden="true">image-20220621082839606</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621082848832.png" alt="image-20220621082848832" /><figcaption aria-hidden="true">image-20220621082848832</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621082905978.png" alt="image-20220621082905978" /><figcaption aria-hidden="true">image-20220621082905978</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220621082925296.png" alt="image-20220621082925296" /><figcaption aria-hidden="true">image-20220621082925296</figcaption>
+</figure>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习进阶</tag>
+        <tag>seq2seq</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>RNN</title>
+    <url>/daybreak/2018/RNN/</url>
+    <content><![CDATA[<p>  笔记整理计划及主题安排 <span id="more"></span></p>
+<h1 id="第五章-rnn">第五章 RNN</h1>
+<h2 id="一概率和语言模型">一、概率和语言模型</h2>
+<h3 id="语言模型">1. 语言模型</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613074024954.png" alt="image-20220613074024954" /><figcaption aria-hidden="true">image-20220613074024954</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613074134445.png" alt="image-20220613074134445" /><figcaption aria-hidden="true">image-20220613074134445</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613074229060.png" alt="image-20220613074229060" /><figcaption aria-hidden="true">image-20220613074229060</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613074241149.png" alt="image-20220613074241149" /><figcaption aria-hidden="true">image-20220613074241149</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613074300665.png" alt="image-20220613074300665" /><figcaption aria-hidden="true">image-20220613074300665</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613074352059.png" alt="image-20220613074352059" /><figcaption aria-hidden="true">image-20220613074352059</figcaption>
+</figure>
+<h3 id="cbow的问题">2. CBOW的问题</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613074538346.png" alt="image-20220613074538346" /><figcaption aria-hidden="true">image-20220613074538346</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613074601677.png" alt="image-20220613074601677" /><figcaption aria-hidden="true">image-20220613074601677</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613074810440.png" alt="image-20220613074810440" /><figcaption aria-hidden="true">image-20220613074810440</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613074847721.png" alt="image-20220613074847721" /><figcaption aria-hidden="true">image-20220613074847721</figcaption>
+</figure>
+<h2 id="二rnn">二、RNN</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613075158334.png" alt="image-20220613075158334" /><figcaption aria-hidden="true">image-20220613075158334</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613075225966.png" alt="image-20220613075225966" /><figcaption aria-hidden="true">image-20220613075225966</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613075331218.png" alt="image-20220613075331218" /><figcaption aria-hidden="true">image-20220613075331218</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613075411974.png" alt="image-20220613075411974" /><figcaption aria-hidden="true">image-20220613075411974</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613075631888.png" alt="image-20220613075631888" /><figcaption aria-hidden="true">image-20220613075631888</figcaption>
+</figure>
+<h3 id="backpropagation-through-timebptt">1. Backpropagation Through Time(BPTT)</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613075911625.png" alt="image-20220613075911625" /><figcaption aria-hidden="true">image-20220613075911625</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613080012800.png" alt="image-20220613080012800" /><figcaption aria-hidden="true">image-20220613080012800</figcaption>
+</figure>
+<h3 id="truncated-bptt">2. Truncated BPTT</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613080141673.png" alt="image-20220613080141673" /><figcaption aria-hidden="true">image-20220613080141673</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613080353159.png" alt="image-20220613080353159" /><figcaption aria-hidden="true">image-20220613080353159</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613080523446.png" alt="image-20220613080523446" /><figcaption aria-hidden="true">image-20220613080523446</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613080536448.png" alt="image-20220613080536448" /><figcaption aria-hidden="true">image-20220613080536448</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613080554791.png" alt="image-20220613080554791" /><figcaption aria-hidden="true">image-20220613080554791</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613080608224.png" alt="image-20220613080608224" /><figcaption aria-hidden="true">image-20220613080608224</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613080622420.png" alt="image-20220613080622420" /><figcaption aria-hidden="true">image-20220613080622420</figcaption>
+</figure>
+<h3 id="truncated-bptt的mini-batch学习">3. Truncated BPTT的mini-batch学习</h3>
+<p>这一节不是很理解，图5-15</p>
+<h2 id="三rnn实现">三、RNN实现</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613081346421.png" alt="image-20220613081346421" /><figcaption aria-hidden="true">image-20220613081346421</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613081359909.png" alt="image-20220613081359909" /><figcaption aria-hidden="true">image-20220613081359909</figcaption>
+</figure>
+<h3 id="rnn层的实现">1. RNN层的实现</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613081548388.png" alt="image-20220613081548388" /><figcaption aria-hidden="true">image-20220613081548388</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613081602717.png" alt="image-20220613081602717" /><figcaption aria-hidden="true">image-20220613081602717</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613081746212.png" alt="image-20220613081746212" /><figcaption aria-hidden="true">image-20220613081746212</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613081802238.png" alt="image-20220613081802238" /><figcaption aria-hidden="true">image-20220613081802238</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613081932866.png" alt="image-20220613081932866" /><figcaption aria-hidden="true">image-20220613081932866</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613081950327.png" alt="image-20220613081950327" /><figcaption aria-hidden="true">image-20220613081950327</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613082222736.png" alt="image-20220613082222736" /><figcaption aria-hidden="true">image-20220613082222736</figcaption>
+</figure>
+<p>​ <img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613082304425.png" alt="image-20220613082304425" /></p>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613082328112.png" alt="image-20220613082328112" /><figcaption aria-hidden="true">image-20220613082328112</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613083117490.png" alt="image-20220613083117490" /><figcaption aria-hidden="true">image-20220613083117490</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613083235244.png" alt="image-20220613083235244" /><figcaption aria-hidden="true">image-20220613083235244</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613083248413.png" alt="image-20220613083248413" /><figcaption aria-hidden="true">image-20220613083248413</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220613083517310.png" alt="image-20220613083517310" /><figcaption aria-hidden="true">image-20220613083517310</figcaption>
+</figure>
+<h2 id="四处理时序数据的层的实现">四、处理时序数据的层的实现</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614065711851.png" alt="image-20220614065711851" /><figcaption aria-hidden="true">image-20220614065711851</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614065810369.png" alt="image-20220614065810369" /><figcaption aria-hidden="true">image-20220614065810369</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614065913183.png" alt="image-20220614065913183" /><figcaption aria-hidden="true">image-20220614065913183</figcaption>
+</figure>
+<h3 id="time层的实现">1. Time层的实现</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614070219989.png" alt="image-20220614070219989" /><figcaption aria-hidden="true">image-20220614070219989</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614070538061.png" alt="image-20220614070538061" /><figcaption aria-hidden="true">image-20220614070538061</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614070628006.png" alt="image-20220614070628006" /><figcaption aria-hidden="true">image-20220614070628006</figcaption>
+</figure>
+<h2 id="五rnnlm的学习和评价">五、RNNLM的学习和评价</h2>
+<h3 id="语言模型的评价">1. 语言模型的评价</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614072352663.png" alt="image-20220614072352663" /><figcaption aria-hidden="true">image-20220614072352663</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614072407532.png" alt="image-20220614072407532" /><figcaption aria-hidden="true">image-20220614072407532</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614072427685.png" alt="image-20220614072427685" /><figcaption aria-hidden="true">image-20220614072427685</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220614072444352.png" alt="image-20220614072444352" /><figcaption aria-hidden="true">image-20220614072444352</figcaption>
+</figure>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习进阶</tag>
+        <tag>RNN</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>笔记整理计划及主题安排</title>
     <url>/daybreak/2028/TO-DO-LIST/</url>
     <content><![CDATA[<p>  笔记整理计划及主题安排 <span id="more"></span></p>
@@ -659,6 +1213,614 @@ ab &amp;= cb
       </categories>
       <tags>
         <tag>Todo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>神经网络和自然语言的分布式表示</title>
+    <url>/daybreak/2018/natural-language-distribution-representation/</url>
+    <content><![CDATA[<p>  笔记整理计划及主题安排 <span id="more"></span></p>
+<h1 id="第一章-神经网络的复习">第一章 神经网络的复习</h1>
+<h2 id="一数学和python复习">一、数学和PYTHON复习</h2>
+<h3 id="向量内积和矩阵乘法">1. 向量内积和矩阵乘法</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605091443221.png" alt="image-20220605091443221" /><figcaption aria-hidden="true">image-20220605091443221</figcaption>
+</figure>
+<h2 id="二神经网络的推理">二、神经网络的推理</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605092128663.png" alt="image-20220605092128663" /><figcaption aria-hidden="true">image-20220605092128663</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605092150379.png" alt="image-20220605092150379" /><figcaption aria-hidden="true">image-20220605092150379</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605092206079.png" alt="image-20220605092206079" /><figcaption aria-hidden="true">image-20220605092206079</figcaption>
+</figure>
+<h2 id="三神经网络的学习">三、神经网络的学习</h2>
+<h3 id="损失函数">1. 损失函数</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605092712310.png" alt="image-20220605092712310" /><figcaption aria-hidden="true">image-20220605092712310</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605092848857.png" alt="image-20220605092848857" /><figcaption aria-hidden="true">image-20220605092848857</figcaption>
+</figure>
+<h3 id="梯度和导数">2. 梯度和导数</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093106941.png" alt="image-20220605093106941" /><figcaption aria-hidden="true">image-20220605093106941</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093118104.png" alt="image-20220605093118104" /><figcaption aria-hidden="true">image-20220605093118104</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093131301.png" alt="image-20220605093131301" /><figcaption aria-hidden="true">image-20220605093131301</figcaption>
+</figure>
+<h3 id="如何求梯度---误差反向传播">3. 如何求梯度 - 误差反向传播</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093218499.png" alt="image-20220605093218499" /><figcaption aria-hidden="true">image-20220605093218499</figcaption>
+</figure>
+<h3 id="计算图">4. 计算图</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093304942.png" alt="image-20220605093304942" /><figcaption aria-hidden="true">image-20220605093304942</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093316540.png" alt="image-20220605093316540" /><figcaption aria-hidden="true">image-20220605093316540</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093328036.png" alt="image-20220605093328036" /><figcaption aria-hidden="true">image-20220605093328036</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093338475.png" alt="image-20220605093338475" /><figcaption aria-hidden="true">image-20220605093338475</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093352491.png" alt="image-20220605093352491" /><figcaption aria-hidden="true">image-20220605093352491</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093403651.png" alt="image-20220605093403651" /><figcaption aria-hidden="true">image-20220605093403651</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093540208.png" alt="image-20220605093540208" /><figcaption aria-hidden="true">image-20220605093540208</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093605841.png" alt="image-20220605093605841" /><figcaption aria-hidden="true">image-20220605093605841</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093633821.png" alt="image-20220605093633821" /><figcaption aria-hidden="true">image-20220605093633821</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093702238.png" alt="image-20220605093702238" /><figcaption aria-hidden="true">image-20220605093702238</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093748652.png" alt="image-20220605093748652" /><figcaption aria-hidden="true">image-20220605093748652</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093759492.png" alt="image-20220605093759492" /><figcaption aria-hidden="true">image-20220605093759492</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093813938.png" alt="image-20220605093813938" /><figcaption aria-hidden="true">image-20220605093813938</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093852762.png" alt="image-20220605093852762" /><figcaption aria-hidden="true">image-20220605093852762</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605093910277.png" alt="image-20220605093910277" /><figcaption aria-hidden="true">image-20220605093910277</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605100249925.png" alt="image-20220605100249925" /><figcaption aria-hidden="true">image-20220605100249925</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605100316055.png" alt="image-20220605100316055" /><figcaption aria-hidden="true">image-20220605100316055</figcaption>
+</figure>
+<p>​ <img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605100405514.png" alt="image-20220605100405514" /></p>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605100534269.png" alt="image-20220605100534269" /><figcaption aria-hidden="true">image-20220605100534269</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605100545489.png" alt="image-20220605100545489" /><figcaption aria-hidden="true">image-20220605100545489</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605100912033.png" alt="image-20220605100912033" /><figcaption aria-hidden="true">image-20220605100912033</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605101529384.png" alt="image-20220605101529384" /><figcaption aria-hidden="true">image-20220605101529384</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605101550460.png" alt="image-20220605101550460" /><figcaption aria-hidden="true">image-20220605101550460</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605101650216.png" alt="image-20220605101650216" /><figcaption aria-hidden="true">image-20220605101650216</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605101727938.png" alt="image-20220605101727938" /><figcaption aria-hidden="true">image-20220605101727938</figcaption>
+</figure>
+<h3 id="权重更新">5. 权重更新</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605101801795.png" alt="image-20220605101801795" /><figcaption aria-hidden="true">image-20220605101801795</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605101822956.png" alt="image-20220605101822956" /><figcaption aria-hidden="true">image-20220605101822956</figcaption>
+</figure>
+<h1 id="第二章-自然语言和单词的分布式表示">第二章 自然语言和单词的分布式表示</h1>
+<h2 id="一同义词词典">一、同义词词典</h2>
+<h3 id="上下位词的概念">1. 上下位词的概念</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607071159559.png" alt="image-20220607071159559" /><figcaption aria-hidden="true">image-20220607071159559</figcaption>
+</figure>
+<h3 id="同义词词典的问题">2. 同义词词典的问题</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607071726977.png" alt="image-20220607071726977" /><figcaption aria-hidden="true">image-20220607071726977</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607071743547.png" alt="image-20220607071743547" /><figcaption aria-hidden="true">image-20220607071743547</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607071755835.png" alt="image-20220607071755835" /><figcaption aria-hidden="true">image-20220607071755835</figcaption>
+</figure>
+<h2 id="二基于计数的方法">二、基于计数的方法</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607071942951.png" alt="image-20220607071942951" /><figcaption aria-hidden="true">image-20220607071942951</figcaption>
+</figure>
+<h3 id="单词的分布式表示">1. 单词的分布式表示</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607072858523.png" alt="image-20220607072858523" /><figcaption aria-hidden="true">image-20220607072858523</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607072931449.png" alt="image-20220607072931449" /><figcaption aria-hidden="true">image-20220607072931449</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607072951818.png" alt="image-20220607072951818" /><figcaption aria-hidden="true">image-20220607072951818</figcaption>
+</figure>
+<h3 id="上下文">2. 上下文</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607073225449.png" alt="image-20220607073225449" /><figcaption aria-hidden="true">image-20220607073225449</figcaption>
+</figure>
+<h3 id="共现矩阵">3. 共现矩阵</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607073518592.png" alt="image-20220607073518592" /><figcaption aria-hidden="true">image-20220607073518592</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607073533335.png" alt="image-20220607073533335" /><figcaption aria-hidden="true">image-20220607073533335</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607073555621.png" alt="image-20220607073555621" /><figcaption aria-hidden="true">image-20220607073555621</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607073619670.png" alt="image-20220607073619670" /><figcaption aria-hidden="true">image-20220607073619670</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607073636897.png" alt="image-20220607073636897" /><figcaption aria-hidden="true">image-20220607073636897</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607073722361.png" alt="image-20220607073722361" /><figcaption aria-hidden="true">image-20220607073722361</figcaption>
+</figure>
+<h3 id="共现矩阵的生成">4. 共现矩阵的生成</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607074519396.png" alt="image-20220607074519396" /><figcaption aria-hidden="true">image-20220607074519396</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607074539004.png" alt="image-20220607074539004" /><figcaption aria-hidden="true">image-20220607074539004</figcaption>
+</figure>
+<h3 id="向量间的相似度">5. 向量间的相似度</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607074633282.png" alt="image-20220607074633282" /><figcaption aria-hidden="true">image-20220607074633282</figcaption>
+</figure>
+<h3 id="相似单词的排序">6. 相似单词的排序</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607075620154.png" alt="image-20220607075620154" /><figcaption aria-hidden="true">image-20220607075620154</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607075635697.png" alt="image-20220607075635697" /><figcaption aria-hidden="true">image-20220607075635697</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607075650441.png" alt="image-20220607075650441" /><figcaption aria-hidden="true">image-20220607075650441</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607075708926.png" alt="image-20220607075708926" /><figcaption aria-hidden="true">image-20220607075708926</figcaption>
+</figure>
+<h2 id="三基于计数方法的改进">三、基于计数方法的改进</h2>
+<h3 id="点互信息">1. 点互信息</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607075949506.png" alt="image-20220607075949506" /><figcaption aria-hidden="true">image-20220607075949506</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607080045963.png" alt="image-20220607080045963" /><figcaption aria-hidden="true">image-20220607080045963</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607080218405.png" alt="image-20220607080218405" /><figcaption aria-hidden="true">image-20220607080218405</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607080316962.png" alt="image-20220607080316962" /><figcaption aria-hidden="true">image-20220607080316962</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607080355013.png" alt="image-20220607080355013" /><figcaption aria-hidden="true">image-20220607080355013</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607081725906.png" alt="image-20220607081725906" /><figcaption aria-hidden="true">image-20220607081725906</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607081932556.png" alt="image-20220607081932556" /><figcaption aria-hidden="true">image-20220607081932556</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607081943006.png" alt="image-20220607081943006" /><figcaption aria-hidden="true">image-20220607081943006</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607081955994.png" alt="image-20220607081955994" /><figcaption aria-hidden="true">image-20220607081955994</figcaption>
+</figure>
+<h3 id="降维">2. 降维</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607082057403.png" alt="image-20220607082057403" /><figcaption aria-hidden="true">image-20220607082057403</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607082141319.png" alt="image-20220607082141319" /><figcaption aria-hidden="true">image-20220607082141319</figcaption>
+</figure>
+<h4 id="奇异值分解singular-value-decompositionsvd">2.1 奇异值分解(Singular Value Decomposition，SVD)</h4>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607082301375.png" alt="image-20220607082301375" /><figcaption aria-hidden="true">image-20220607082301375</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607082429125.png" alt="image-20220607082429125" /><figcaption aria-hidden="true">image-20220607082429125</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607082625009.png" alt="image-20220607082625009" /><figcaption aria-hidden="true">image-20220607082625009</figcaption>
+</figure>
+<h3 id="基于svd的降维">4. 基于SVD的降维</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607083101594.png" alt="image-20220607083101594" /><figcaption aria-hidden="true">image-20220607083101594</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607083120051.png" alt="image-20220607083120051" /><figcaption aria-hidden="true">image-20220607083120051</figcaption>
+</figure>
+<h4 id="这里为什么要取前两个而不是其他列">4.1 这里为什么要取前两个，而不是其他列</h4>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607083135222.png" alt="image-20220607083135222" /><figcaption aria-hidden="true">image-20220607083135222</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607083149389.png" alt="image-20220607083149389" /><figcaption aria-hidden="true">image-20220607083149389</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607083203105.png" alt="image-20220607083203105" /><figcaption aria-hidden="true">image-20220607083203105</figcaption>
+</figure>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习进阶</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>word2vec的高速化</title>
+    <url>/daybreak/2018/word2vec-improvement/</url>
+    <content><![CDATA[<p>  笔记整理计划及主题安排 <span id="more"></span></p>
+<h1 id="第四章-word2vec的高速化">第四章 word2vec的高速化</h1>
+<h2 id="一word2vec的改进">一、word2vec的改进</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609063410401.png" alt="image-20220609063410401" /><figcaption aria-hidden="true">image-20220609063410401</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609063438414.png" alt="image-20220609063438414" /><figcaption aria-hidden="true">image-20220609063438414</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609063458888.png" alt="image-20220609063458888" /><figcaption aria-hidden="true">image-20220609063458888</figcaption>
+</figure>
+<h3 id="embedding层">1.Embedding层</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609063718860.png" alt="image-20220609063718860" /><figcaption aria-hidden="true">image-20220609063718860</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609063734744.png" alt="image-20220609063734744" /><figcaption aria-hidden="true">image-20220609063734744</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609063756876.png" alt="image-20220609063756876" /><figcaption aria-hidden="true">image-20220609063756876</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609063950744.png" alt="image-20220609063950744" /><figcaption aria-hidden="true">image-20220609063950744</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609064004198.png" alt="image-20220609064004198" /><figcaption aria-hidden="true">image-20220609064004198</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609064057163.png" alt="image-20220609064057163" /><figcaption aria-hidden="true">image-20220609064057163</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609064347923.png" alt="image-20220609064347923" /><figcaption aria-hidden="true">image-20220609064347923</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609064724657.png" alt="image-20220609064724657" /><figcaption aria-hidden="true">image-20220609064724657</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609064743379.png" alt="image-20220609064743379" /><figcaption aria-hidden="true">image-20220609064743379</figcaption>
+</figure>
+<h3 id="反向传播的原理">2. 反向传播的原理</h3>
+<h2 id="二word2vec的改进2">二、word2vec的改进2</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609065001172.png" alt="image-20220609065001172" /><figcaption aria-hidden="true">image-20220609065001172</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609065123415.png" alt="image-20220609065123415" /><figcaption aria-hidden="true">image-20220609065123415</figcaption>
+</figure>
+<h3 id="从多分类到二分类">1. 从多分类到二分类</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609065409728.png" alt="image-20220609065409728" /><figcaption aria-hidden="true">image-20220609065409728</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609065658690.png" alt="image-20220609065658690" /><figcaption aria-hidden="true">image-20220609065658690</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609065712744.png" alt="image-20220609065712744" /><figcaption aria-hidden="true">image-20220609065712744</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609070202959.png" alt="image-20220609070202959" /><figcaption aria-hidden="true">image-20220609070202959</figcaption>
+</figure>
+<p>中间层会输出一个1*100的向量，然后二分类中目标词是say，所以Wout中取出say对应的那一列，形状为100*1，所以输出结果为1*1</p>
+<p>​ <img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609072022553.png" alt="image-20220609072022553" /></p>
+<h3 id="多分类到二分类的实现">2. 多分类到二分类的实现</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609072121674.png" alt="image-20220609072121674" /><figcaption aria-hidden="true">image-20220609072121674</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609072132409.png" alt="image-20220609072132409" /><figcaption aria-hidden="true">image-20220609072132409</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609072155122.png" alt="image-20220609072155122" /><figcaption aria-hidden="true">image-20220609072155122</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609072218100.png" alt="image-20220609072218100" /><figcaption aria-hidden="true">image-20220609072218100</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609072300350.png" alt="image-20220609072300350" /><figcaption aria-hidden="true">image-20220609072300350</figcaption>
+</figure>
+<h3 id="负采样">3. 负采样</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609073446187.png" alt="image-20220609073446187" /><figcaption aria-hidden="true">image-20220609073446187</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609073459230.png" alt="image-20220609073459230" /><figcaption aria-hidden="true">image-20220609073459230</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609073512500.png" alt="image-20220609073512500" /><figcaption aria-hidden="true">image-20220609073512500</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609073547881.png" alt="image-20220609073547881" /><figcaption aria-hidden="true">image-20220609073547881</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609073605580.png" alt="image-20220609073605580" /><figcaption aria-hidden="true">image-20220609073605580</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609073621284.png" alt="image-20220609073621284" /><figcaption aria-hidden="true">image-20220609073621284</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609073712864.png" alt="image-20220609073712864" /><figcaption aria-hidden="true">image-20220609073712864</figcaption>
+</figure>
+<h3 id="负采样的采样方法">4. 负采样的采样方法</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609073839911.png" alt="image-20220609073839911" /><figcaption aria-hidden="true">image-20220609073839911</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609073854259.png" alt="image-20220609073854259" /><figcaption aria-hidden="true">image-20220609073854259</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609074025286.png" alt="image-20220609074025286" /><figcaption aria-hidden="true">image-20220609074025286</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609074047570.png" alt="image-20220609074047570" /><figcaption aria-hidden="true">image-20220609074047570</figcaption>
+</figure>
+<h3 id="负采样实现">5. 负采样实现</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609074901576.png" alt="image-20220609074901576" /><figcaption aria-hidden="true">image-20220609074901576</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609074914692.png" alt="image-20220609074914692" /><figcaption aria-hidden="true">image-20220609074914692</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609074925870.png" alt="image-20220609074925870" /><figcaption aria-hidden="true">image-20220609074925870</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609074947481.png" alt="image-20220609074947481" /><figcaption aria-hidden="true">image-20220609074947481</figcaption>
+</figure>
+<h2 id="三改进版word2vec的学习">三、改进版word2vec的学习</h2>
+<h3 id="cbow模型的实现">1. CBOW模型的实现</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609075241196.png" alt="image-20220609075241196" /><figcaption aria-hidden="true">image-20220609075241196</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609075301089.png" alt="image-20220609075301089" /><figcaption aria-hidden="true">image-20220609075301089</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609075312989.png" alt="image-20220609075312989" /><figcaption aria-hidden="true">image-20220609075312989</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609075648091.png" alt="image-20220609075648091" /><figcaption aria-hidden="true">image-20220609075648091</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609080108889.png" alt="image-20220609080108889" /><figcaption aria-hidden="true">image-20220609080108889</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220609080132220.png" alt="image-20220609080132220" /><figcaption aria-hidden="true">image-20220609080132220</figcaption>
+</figure>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习进阶</tag>
+        <tag>word2vec</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>word2vec</title>
+    <url>/daybreak/2018/word2vec/</url>
+    <content><![CDATA[<p>  笔记整理计划及主题安排 <span id="more"></span></p>
+<h1 id="第三章-word2vec">第三章 word2vec</h1>
+<h2 id="一基于推理的方法和神经网络">一、基于推理的方法和神经网络</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608072503890.png" alt="image-20220608072503890" /><figcaption aria-hidden="true">image-20220608072503890</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608072541762.png" alt="image-20220608072541762" /><figcaption aria-hidden="true">image-20220608072541762</figcaption>
+</figure>
+<h3 id="基于推理的方法的概要">基于推理的方法的概要</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608072630883.png" alt="image-20220608072630883" /><figcaption aria-hidden="true">image-20220608072630883</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608072706083.png" alt="image-20220608072706083" /><figcaption aria-hidden="true">image-20220608072706083</figcaption>
+</figure>
+<h2 id="二简单的word2vec">二、简单的word2vec</h2>
+<h3 id="cbowcontinuous-bag-of-words">1. CBOW（continuous bag-of-words）</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608073503975.png" alt="image-20220608073503975" /><figcaption aria-hidden="true">image-20220608073503975</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608073614506.png" alt="image-20220608073614506" /><figcaption aria-hidden="true">image-20220608073614506</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608073816213.png" alt="image-20220608073816213" /><figcaption aria-hidden="true">image-20220608073816213</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608073949795.png" alt="image-20220608073949795" /><figcaption aria-hidden="true">image-20220608073949795</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608074131408.png" alt="image-20220608074131408" /><figcaption aria-hidden="true">image-20220608074131408</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608074144251.png" alt="image-20220608074144251" /><figcaption aria-hidden="true">image-20220608074144251</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608074245008.png" alt="image-20220608074245008" /><figcaption aria-hidden="true">image-20220608074245008</figcaption>
+</figure>
+<h3 id="cbow模型的学习">2. CBOW模型的学习</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608074819648.png" alt="image-20220608074819648" /><figcaption aria-hidden="true">image-20220608074819648</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608074919929.png" alt="image-20220608074919929" /><figcaption aria-hidden="true">image-20220608074919929</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608075020788.png" alt="image-20220608075020788" /><figcaption aria-hidden="true">image-20220608075020788</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608075118600.png" alt="image-20220608075118600" /><figcaption aria-hidden="true">image-20220608075118600</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608075149077.png" alt="image-20220608075149077" /><figcaption aria-hidden="true">image-20220608075149077</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608075211282.png" alt="image-20220608075211282" /><figcaption aria-hidden="true">image-20220608075211282</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608075311139.png" alt="image-20220608075311139" /><figcaption aria-hidden="true">image-20220608075311139</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608075330999.png" alt="image-20220608075330999" /><figcaption aria-hidden="true">image-20220608075330999</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608075405386.png" alt="image-20220608075405386" /><figcaption aria-hidden="true">image-20220608075405386</figcaption>
+</figure>
+<h2 id="三学习数据的准备">三、学习数据的准备</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608075535716.png" alt="image-20220608075535716" /><figcaption aria-hidden="true">image-20220608075535716</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608075839454.png" alt="image-20220608075839454" /><figcaption aria-hidden="true">image-20220608075839454</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608075853452.png" alt="image-20220608075853452" /><figcaption aria-hidden="true">image-20220608075853452</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608080229061.png" alt="image-20220608080229061" /><figcaption aria-hidden="true">image-20220608080229061</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608080335077.png" alt="image-20220608080335077" /><figcaption aria-hidden="true">image-20220608080335077</figcaption>
+</figure>
+<h2 id="四cbow模型的实现">四、CBOW模型的实现</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608080440373.png" alt="image-20220608080440373" /><figcaption aria-hidden="true">image-20220608080440373</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608081119562.png" alt="image-20220608081119562" /><figcaption aria-hidden="true">image-20220608081119562</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608081149452.png" alt="image-20220608081149452" /><figcaption aria-hidden="true">image-20220608081149452</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608081243373.png" alt="image-20220608081243373" /><figcaption aria-hidden="true">image-20220608081243373</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608081357773.png" alt="image-20220608081357773" /><figcaption aria-hidden="true">image-20220608081357773</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608082136636.png" alt="image-20220608082136636" /><figcaption aria-hidden="true">image-20220608082136636</figcaption>
+</figure>
+<p>hidden_size决定了单词向量表示的稠密矩阵的列数，行数由单词数决定，也就是vocab_size</p>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608081954808.png" alt="image-20220608081954808" /><figcaption aria-hidden="true">image-20220608081954808</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608082010345.png" alt="image-20220608082010345" /><figcaption aria-hidden="true">image-20220608082010345</figcaption>
+</figure>
+<h2 id="五word2vec的补充说明">五、word2vec的补充说明</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608083619225.png" alt="image-20220608083619225" /><figcaption aria-hidden="true">image-20220608083619225</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608083802171.png" alt="image-20220608083802171" /><figcaption aria-hidden="true">image-20220608083802171</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608083817305.png" alt="image-20220608083817305" /><figcaption aria-hidden="true">image-20220608083817305</figcaption>
+</figure>
+<h3 id="skip-gram模型">1. skip-gram模型</h3>
+<p>skip-gram取得是哪个权重？Win还是Wout</p>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608084040613.png" alt="image-20220608084040613" /><figcaption aria-hidden="true">image-20220608084040613</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608084107971.png" alt="image-20220608084107971" /><figcaption aria-hidden="true">image-20220608084107971</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608084154318.png" alt="image-20220608084154318" /><figcaption aria-hidden="true">image-20220608084154318</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608084351302.png" alt="image-20220608084351302" /><figcaption aria-hidden="true">image-20220608084351302</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608084418506.png" alt="image-20220608084418506" /><figcaption aria-hidden="true">image-20220608084418506</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608084454539.png" alt="image-20220608084454539" /><figcaption aria-hidden="true">image-20220608084454539</figcaption>
+</figure>
+<h3 id="基于计数与基于推理">3.基于计数与基于推理</h3>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608084627665.png" alt="image-20220608084627665" /><figcaption aria-hidden="true">image-20220608084627665</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608084731203.png" alt="image-20220608084731203" /><figcaption aria-hidden="true">image-20220608084731203</figcaption>
+</figure>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220608084819208.png" alt="image-20220608084819208" /><figcaption aria-hidden="true">image-20220608084819208</figcaption>
+</figure>
+<h1 id="todo">TODO:</h1>
+<ol type="1">
+<li><p>WordNet（普林斯顿大学，1985年）定义，原理，代码实现，用途及适用场景</p>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220607071457167.png" alt="image-20220607071457167" /><figcaption aria-hidden="true">image-20220607071457167</figcaption>
+</figure></li>
+<li><p>奇异值分解（矩阵）的原理，实现，用途及适用场景</p></li>
+<li></li>
+</ol>
+<h1 id="python">Python</h1>
+<h2 id="浅复制和深复制">1. 浅复制和深复制</h2>
+<figure>
+<img src="https://res.cloudinary.com/jknight/image/upload/v1654564301/daybreak/DL_NLP/image-20220605100824932.png" alt="image-20220605100824932" /><figcaption aria-hidden="true">image-20220605100824932</figcaption>
+</figure>
+<h3 id="section"></h3>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习进阶</tag>
+        <tag>word2vec</tag>
+        <tag>CBOW</tag>
+        <tag>skip-gram</tag>
       </tags>
   </entry>
 </search>
